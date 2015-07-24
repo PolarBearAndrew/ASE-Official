@@ -5,7 +5,7 @@ var fs = require('fs');
 //建置static html page
 router.post('/', function(req, res, next) {
 
-	var path = 'public/' + req.body.name + '.html';
+	var path = 'public/build-' + req.body.name + '.html';
 
 	fs.unlink(path, function(){
 

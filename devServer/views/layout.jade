@@ -1,7 +1,105 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/asset/css/style.css')
+    title ASE-Official
+    //- javascript
+    script(src='asset/js/jquery-2.1.3.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+    //- css
+    link(rel='stylesheet', href='asset/css/basic.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+
   body
+    //- top nav bar
+    nav.navbar.navbar-default(role='navigation')
+      .container-fluid
+        //- header
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') ASE Intelligent Technology
+        //- nav bar left
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            //-
+              <li class="active"><a href="#">節能<span class="sr-only">(current)</span></a>
+              </li>
+            //- 節能產品
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | 節能產品
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') 節能燈泡
+                li
+                  a(href='#') 節能電風扇
+                li
+                  a(href='#') 節能冷氣機
+                li
+                  a(href='#') 節能插座
+                li
+                  a(href='#') 節能電磁爐
+                li.divider
+                li
+                  a(href='#') 工業用省電燈泡
+                li
+                  a(href='#') 工業用節能風扇
+            //- 創能產品
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | 創能產品
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') 高效太陽能板
+                li
+                  a(href='#') 高效風力風扇
+                li
+                  a(href='#') 高容量家用儲電池
+            //- 智能產品
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | 智能產品
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') 智慧型瓦斯爐
+                li
+                  a(href='#') 防呆門閂
+                li
+                  a(href='#') 智能冷氣機
+            //- 水電服務
+            li
+              a(href='./service.html') 水電服務
+          //- nav bar left close
+          //-
+            <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">站內搜尋</button>
+            </form>
+          //- nav bar right
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') 關於ASE
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | 更多服務
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
     block content
