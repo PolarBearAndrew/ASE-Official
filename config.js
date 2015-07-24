@@ -3,5 +3,6 @@
 
 var config = [
 	'product',
-	'service'
+	'service',
+	'index'
 ];
