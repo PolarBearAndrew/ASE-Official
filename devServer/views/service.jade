@@ -3,36 +3,13 @@ extends container
 block content
   .container-fluid
     .row
-      .col-xs-12.col-sm-6.col-md-3
-        .thumbnail
-          img.img-circle(src='asset/img/service01.jpg', height='300', width='300', alt='service01')
-          .caption
-            h3 家庭用電檢查服務
-            p 協助您檢查家庭配電的狀框，檢測是哪些家用電器消耗掉大量的電費，或協助您檢查房間配電配線是否合理。檢查
-            p
-              a.btn.btn-primary.btn-sm(href='#', role='button') 瞭解服務
-      .col-xs-12.col-sm-6.col-md-3
-        .thumbnail
-          img.img-circle(src='asset/img/service01.jpg', height='300', width='300', alt='service01')
-          .caption
-            h3 家庭用電檢查服務
-            p 協助您檢查家庭配電的狀框，檢測是哪些家用電器消耗掉大量的電費，或協助您檢查房間配電配線是否合理。檢查
-            p
-              a.btn.btn-primary.btn-sm(href='#', role='button') 瞭解服務
-      .col-xs-12.col-sm-6.col-md-3
-        .thumbnail
-          img.img-circle(src='asset/img/service01.jpg', height='300', width='300', alt='service01')
-          .caption
-            h3 家庭用電檢查服務
-            p 協助您檢查家庭配電的狀框，檢測是哪些家用電器消耗掉大量的電費，或協助您檢查房間配電配線是否合理。檢查
-            p
-              a.btn.btn-primary.btn-sm(href='#', role='button') 瞭解服務
-      .col-xs-12.col-sm-6.col-md-3
-        .thumbnail
-          img.img-circle(src='asset/img/service01.jpg', height='300', width='300', alt='service01')
-          .caption
-            h3 家庭用電檢查服務
-            p 協助您檢查家庭配電的狀框，檢測是哪些家用電器消耗掉大量的電費，或協助您檢查房間配電配線是否合理。檢查
-            p
-              a.btn.btn-primary.btn-sm(href='#', role='button') 瞭解服務
+      - for( var i = 0; i < 12; i++ )
+        .col-xs-12.col-sm-6.col-md-3
+          .thumbnail
+            img.img-circle(src='asset/img/service01.jpg', height='300', width='300', alt='service01')
+            .caption
+              h3 家庭用電檢查服務
+              p 協助您檢查家庭配電的狀框，檢測是哪些家用電器消耗掉大量的電費，或協助您檢查房間配電配線是否合理。檢查
+              p
+                a.btn.btn-primary.btn-sm(href='#', role='button') 瞭解服務
 

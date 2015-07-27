@@ -1,6 +1,35 @@
 extends container
 
 block content
+
+  link(rel='stylesheet', href='asset/css/index.css')
+  script(src='asset/js/index.js')
+
+  div(data-index='1')#tab1.tab
+    .container
+      .col-md-1
+      .col-md-10
+        h3 節能科技
+      .col-md-1
+  div(data-index='2')#tab2.tab
+    .container
+      .col-md-1
+      .col-md-10
+        h3 創能科技
+      .col-md-1
+  div(data-index='3')#tab3.tab
+    .container
+      .col-md-1
+      .col-md-10
+        h3 智能科技
+      .col-md-1
+  div(data-index='4')#tab4.tab
+    .container
+      .col-md-1
+      .col-md-10
+        h3 水電相關服務
+      .col-md-1
+
   .jumbotron.bg
     .container
       h1 建置屬於您的智慧家庭環境!
@@ -8,17 +37,19 @@ block content
       p
         a.btn.btn-success.btn-lg(href='#', role='button') 瞭解詳情
 
-      .row
-        .col-xs-6.col-md-3
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', height='400px', alt='節能')
-        .col-xs-6.col-md-3
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', alt='創能')
-        .col-xs-6.col-md-3
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', alt='智能')
-        .col-xs-6.col-md-3
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', alt='水電服務')
+      br
+      br
 
+      .row
+        .col-xs-6.col-md-3.tabImg#service1
+          a.thumbnail(href='#')
+            img(src='asset/img/buildpower.jpg', height='400px', alt='節能' data-index='1')
+        .col-xs-6.col-md-3.tabImg#service2
+          a.thumbnail(href='#')
+            img(src='asset/img/buildpower.jpg', height='400px', alt='創能' data-index='2')
+        .col-xs-6.col-md-3.tabImg#service3
+          a.thumbnail(href='#')
+            img(src='asset/img/buildpower.jpg', height='400px', alt='智能' data-index='3')
+        .col-xs-6.col-md-3.tabImg#service4
+          a.thumbnail(href='#')
+            img(src='asset/img/buildpower.jpg', height='400px', alt='智能' data-index='4')

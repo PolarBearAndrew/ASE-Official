@@ -22,13 +22,10 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#') ASE Intelligent Technology
+          a.navbar-brand(href='/?name=index') ASE Intelligent Technology
         //- nav bar left
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
-            //-
-              <li class="active"><a href="#">節能<span class="sr-only">(current)</span></a>
-              </li>
             //- 節能產品
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
@@ -36,7 +33,7 @@ html
                 span.caret
               ul.dropdown-menu(role='menu')
                 li
-                  a(href='#') 節能燈泡
+                  a(href='/?name=product') !!節能燈泡!!
                 li
                   a(href='#') 節能電風扇
                 li
@@ -76,7 +73,7 @@ html
                   a(href='#') 智能冷氣機
             //- 水電服務
             li
-              a(href='./service.html') 水電服務
+              a(href='/?name=service') 水電服務
           //- nav bar left close
           //-
             <form class="navbar-form navbar-right" role="search">
