@@ -12,7 +12,7 @@ $(document).ready(function(){
 		    'zIndex': 2
 		}, 0).animate({
 		    opacity: 1,
-		}, 200);
+		}, 300);
 	});
 
 	$('html, body').on('mouseleave', '.tab', function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 		$( "#tab" + index ).animate({
 			opacity: 0
-		}, 150, function(){
+		}, 100, function(){
 			$(this).animate({ 'zIndex': 0 }, 0)
 			$('#service' + index).animate({
 			    'zIndex': 1
