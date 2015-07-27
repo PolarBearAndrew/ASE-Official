@@ -11,6 +11,7 @@ html
     link(rel='stylesheet', href='asset/css/basic.css')
 
   body
+
     //- top nav bar
     nav.navbar.navbar-default(role='navigation')
       .container-fluid
@@ -87,7 +88,7 @@ html
           //- nav bar right
           ul.nav.navbar-nav.navbar-right
             li
-              a(href='#') 關於ASE
+              a(href='#' data-toggle='modal', data-target='.bs-example-modal-lg') 關於ASE
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                 | 更多服務
@@ -102,4 +103,38 @@ html
                 li.divider
                 li
                   a(href='#') Separated link
+
+    .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4.modal-title 漢鵬智能科技有限公司  ASE Intelligent Technology Co, Ltd.
+          .modal-body
+            p
+              span.glyphicon.glyphicon-pushpin(aria-hidden='true')
+              &nbsp;&nbsp;220新北市板橋區四川路二段58號
+            p
+              span.glyphicon.glyphicon-pushpin(aria-hidden='true')
+              &nbsp;&nbsp;No.58, Sec. 2, Sichuan Rd., Banqiao Dist., New Taipei Ciry 220, Taiwan
+            p
+              span.glyphicon.glyphicon-phone-alt(aria-hidden='true')
+              &nbsp;&nbsp;T +886 2 7738 0560
+            p
+              span.glyphicon.glyphicon-earphone(aria-hidden='true')
+              &nbsp;&nbsp;F +886 2 7738 0960
+            p
+              span.glyphicon.glyphicon-print(aria-hidden='true')
+              &nbsp;&nbsp;VAT 54569729
+            p
+              span.glyphicon.glyphicon-envelope(aria-hidden='true')
+              &nbsp;&nbsp;
+              a(href='mailto:janus_cheng@aseintech.com')
+                | janus_cheng@aseintech.com
+          //- .modal-footer
+          //-   button.btn.btn-default(type='button', data-dismiss='modal') Close
+          //-   button.btn.btn-primary(type='button') Save changes
+
     block content

@@ -3,6 +3,9 @@ body {
   margin: 0px;
   background-color: #EEE; }
 
+.toright {
+  margin-left: auto; }
+
 .floatImgRight {
   float: right; }
 
