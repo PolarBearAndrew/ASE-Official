@@ -5,30 +5,16 @@ block content
   link(rel='stylesheet', href='asset/css/index.css')
   script(src='asset/js/index.js')
 
-  div(data-index='1')#tab1.tab
-    .container
-      .col-md-1
-      .col-md-10
-        h3 節能科技
-      .col-md-1
-  div(data-index='2')#tab2.tab
-    .container
-      .col-md-1
-      .col-md-10
-        h3 創能科技
-      .col-md-1
-  div(data-index='3')#tab3.tab
-    .container
-      .col-md-1
-      .col-md-10
-        h3 智能科技
-      .col-md-1
-  div(data-index='4')#tab4.tab
-    .container
-      .col-md-1
-      .col-md-10
-        h3 水電相關服務
-      .col-md-1
+  - for( var i = 1; i<=4; i++)
+    - var id = {'id': 'tab' + i }
+    - var data = {'data-index': i }
+    div(data-index='1').tab&attributes(id)&attributes(data)
+      .container
+        .col-md-10
+          h3 節能科技
+        .col-md-1
+  div(data-index='5').tab
+    p 只是為了讓上面那個不是最後一個tab
 
   .jumbotron.bg
     .container
@@ -41,15 +27,9 @@ block content
       br
 
       .row
-        .col-xs-6.col-md-3.tabImg#service1
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', height='400px', alt='節能' data-index='1')
-        .col-xs-6.col-md-3.tabImg#service2
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', height='400px', alt='創能' data-index='2')
-        .col-xs-6.col-md-3.tabImg#service3
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', height='400px', alt='智能' data-index='3')
-        .col-xs-6.col-md-3.tabImg#service4
-          a.thumbnail(href='#')
-            img(src='asset/img/buildpower.jpg', height='400px', alt='智能' data-index='4')
+        - for( var i = 1; i<=4; i++)
+          - var id = {'id': 'service' + i }
+          - var data = {'data-index': i }
+          .col-xs-6.col-md-3.tabImg&attributes(id)
+            a.thumbnail(href='#')
+              img(src='asset/img/buildpower.jpg', height='400px', alt='節能')&attributes(data)
