@@ -10,30 +10,19 @@ block content
         // <img src="asset/img/demo.png" height="80%" width="80%" alt="">
         img.img-responsive(src='asset/img/demo.png', height='80%', width='80%', alt='')
       .col-xs-12.col-md-5
-        h1
-          | 節能探照燈&nbsp;&nbsp;&nbsp;
+        h1= data.name.text
+          | &nbsp;&nbsp;&nbsp;
           small
-            span.label.label-warning 工業用
+            - var color = { 'class': 'label-' + data.name.useOn.color };
+            span&attributes(color).label= data.name.useOn.text
         br
 
-        h4
-          span.label.label-success 節能
-          | 高效能電池
-        h4
-          span.label.label-success 節能
-          | 重量輕散熱好
-        h4
-          span.label.label-success 節能
-          | 節能80%
-        h4
-          span.label.label-danger 安全
-          | 無紅紫外線 不傷眼
-        h4
-          span.label.label-primary 高品質
-          | 高品質台灣封裝晶片
-        h4
-          span.label.label-primary 高品質
-          | 車旅本體堅固不變形
+        - for( var i=0; i < data.good.length; i++)
+          h4
+            - color = { 'class': 'label-' + data.good[i].color };
+            span.label&attributes(color)= data.good[i].title
+            | &nbsp;&nbsp;
+            = data.good[i].content
 
     br
     br

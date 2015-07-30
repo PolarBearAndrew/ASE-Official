@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 
+let productData = require('../data/product.root.js');
+
 //建置static html page
 router.post('/', function(req, res, next) {
 
@@ -25,7 +27,7 @@ router.post('/', function(req, res, next) {
 router.get('/', function(req, res, next) {
 
 	if(req.query.name)
-		res.render(req.query.name);
+		res.render(req.query.name, { data: productData['product_light_1'] } );
 });
 
 module.exports = router;
