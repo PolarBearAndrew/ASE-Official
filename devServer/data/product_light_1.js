@@ -148,7 +148,7 @@ let data = {
 		{
 			key: 'mdivKey',
 			text: '中型',
-			img: 'asset/img/demo.jpg',
+			img: 'asset/img/demo.png',
 			imgText: '中型節能探照燈',
 			info: [
 				{
