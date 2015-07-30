@@ -11,7 +11,6 @@ html
     link(rel='stylesheet', href='asset/css/basic.css')
 
   body
-
     //- top nav bar
     nav.navbar.navbar-default(role='navigation')
       .container-fluid
@@ -27,54 +26,25 @@ html
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             //- 節能產品
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | 節能服務
-                span.caret
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='/?name=product') !!節能燈泡!!
-                li
-                  a(href='#') 節能電風扇
-                li
-                  a(href='#') 節能冷氣機
-                li
-                  a(href='#') 節能插座
-                li
-                  a(href='#') 節能電磁爐
-                li.divider
-                li
-                  a(href='#') 工業用省電燈泡
-                li
-                  a(href='#') 工業用節能風扇
-            //- 創能產品
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | 綠色創能
-                span.caret
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='#') 高效太陽能板
-                li
-                  a(href='#') 高效風力風扇
-                li
-                  a(href='#') 高容量家用儲電池
-            //- 智能產品
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | 居家智能工程
-                span.caret
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='#') 智慧型瓦斯爐
-                li
-                  a(href='#') 防呆門閂
-                li
-                  a(href='#') 智能冷氣機
-            //- 水電服務
-            li
-              a(href='/?name=service') 修繕改裝
-          //- nav bar left close
+            - var barleft = appbar.left;
+            - for(var i=0; i < barleft.dropdown.length; i++)
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')= barleft.dropdown[i].text
+                  span.caret
+                ul.dropdown-menu(role='menu')
+                  - var content = barleft.dropdown[i].content;
+                  - for(var j=0; j < content.length; j++)
+                    - var href = { href: content[j].url}
+                    - if(content[j].text !== 'divider')
+                      li
+                        a&attributes(href)= content[j].text
+                    - else
+                      li.divider
+            - for(var j=0; j < barleft.link.length; j++)
+              - var href = { href: barleft.link[j].url}
+              li
+                a&attributes(href)= barleft.link[j].text
+
           //-
             <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
