@@ -34,6 +34,50 @@ block content
         h4
           span.label.label-primary 高品質
           | 車旅本體堅固不變形
+
+    br
+    br
+
+    .row
+      .col-md-1
+      .col-md-10
+        #carousel-example-generic.carousel.slide(data-ride='carousel')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#carousel-example-generic', data-slide-to='0')
+            li(data-target='#carousel-example-generic', data-slide-to='1')
+            li(data-target='#carousel-example-generic', data-slide-to='2')
+            li(data-target='#carousel-example-generic', data-slide-to='3')
+          // Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='asset/img/demo2.jpg', alt='', width="100%")
+              .carousel-caption
+                h3 使用案例 1
+                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
+            .item
+              img(src='asset/img/demo2.jpg', alt='', width="100%")
+              .carousel-caption
+                h3 節能探照燈 2
+                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
+            .item
+              img(src='asset/img/demo2.jpg', alt='', width="100%")
+              .carousel-caption
+                h3 節能探照燈 3
+                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
+            .item
+              img(src='asset/img/demo2.jpg', alt='', width="100%")
+              .carousel-caption
+                h3 節能探照燈 4
+                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
+            // Controls
+            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+              span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+              span.sr-only Previous
+            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+              span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+              span.sr-only Next
+      .col-md-1
     br
     br
     br
