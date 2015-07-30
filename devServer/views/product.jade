@@ -81,7 +81,7 @@ block content
           .alert(role='alert')&attributes(color)= data.ques[i].Q.text
           blockquote
             - for( var j=0; j < data.ques[i].A.content.length; j++)
-              p= data.ques[j].A.content[j]
+              p= data.ques[i].A.content[j]
       .col-md-2
     br
     br
