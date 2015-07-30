@@ -75,7 +75,7 @@ block content
       .col-md-2
       .col-md-8
         h3 常見問題
-        hr
+        br
         - for( var i=0; i < data.ques.length; i++)
           - var color = {class: 'alert-' + data.ques[i].Q.color};
           .alert(role='alert')&attributes(color)= data.ques[i].Q.text
