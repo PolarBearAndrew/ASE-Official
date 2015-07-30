@@ -4,11 +4,12 @@ block content
   .container-fluid
     br
     br
+    //- top product title
     .row
       .col-md-2
       .col-xs-12.col-sm-8.col-md-5
-        // <img src="asset/img/demo.png" height="80%" width="80%" alt="">
-        img.img-responsive(src='asset/img/demo.png', height='80%', width='80%', alt='')
+        - var img = { src: data.img };
+        img.img-responsive(height='80%', width='80%', alt='')&attributes(img)
       .col-xs-12.col-md-5
         h1= data.name.text
           | &nbsp;&nbsp;&nbsp;
@@ -23,43 +24,33 @@ block content
             span.label&attributes(color)= data.good[i].title
             | &nbsp;&nbsp;
             = data.good[i].content
-
     br
     br
-
+    //- image box
     .row
       .col-md-1
       .col-md-10
         #carousel-example-generic.carousel.slide(data-ride='carousel')
-          // Indicators
+          //- slide to ...
           ol.carousel-indicators
-            li.active(data-target='#carousel-example-generic', data-slide-to='0')
-            li(data-target='#carousel-example-generic', data-slide-to='1')
-            li(data-target='#carousel-example-generic', data-slide-to='2')
-            li(data-target='#carousel-example-generic', data-slide-to='3')
-          // Wrapper for slides
+            - for( var i=0; i < data.imgBox.length; i++)
+              - if( i === 0 )
+                li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic')&attributes({ 'data-slide-to': i})
+          //- img box
           .carousel-inner(role='listbox')
-            .item.active
-              img(src='asset/img/demo2.jpg', alt='', width="100%")
-              .carousel-caption
-                h3 使用案例 1
-                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
-            .item
-              img(src='asset/img/demo2.jpg', alt='', width="100%")
-              .carousel-caption
-                h3 節能探照燈 2
-                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
-            .item
-              img(src='asset/img/demo2.jpg', alt='', width="100%")
-              .carousel-caption
-                h3 節能探照燈 3
-                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
-            .item
-              img(src='asset/img/demo2.jpg', alt='', width="100%")
-              .carousel-caption
-                h3 節能探照燈 4
-                p 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲
-            // Controls
+            - for( var i=0; i < data.imgBox.length; i++)
+              - var active = { '': null};
+              - if( i === 0)
+                - active = {class: 'active'};
+              .item&attributes(active)
+                - var img = { src: data.imgBox[i].url};
+                - var alt = { alt: data.imgBox[i].title};
+                img(width="100%")&attributes(img)&attributes(alt)
+                .carousel-caption
+                  h3= data.imgBox[i].title
+                  p= data.imgBox[i].describe
+            //- Ctrl
             a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
               span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
               span.sr-only Previous
@@ -70,95 +61,86 @@ block content
     br
     br
     br
-    br
+    //- describe information
     .row
       .col-md-2
       .col-md-8
-        h3 產品簡介
-        hr
+        h3= data.describe.title
         blockquote
-          p
-            | 探照燈在軍事方面的使用開始於19世紀，日俄戰爭時雙方的海軍戰艦都用探照燈於夜間搜尋敵方小型魚雷艇。探照燈也常見於海防岸炮陣地與空防部隊。一次大戰約翰·弗雷德里克·查爾斯·富勒首次使用探照燈製造所謂的「人造月光」來輔助夜戰，二次大戰時也曾使用相同的戰術。
-          p
-            | 二次大戰時期探照燈曾被大量使用於對抗敵方的夜間空襲。當時的防空炮兵同時使用兩具探照燈，由探照燈的仰角可以用三角函數計算出敵方轟炸機的確實高度，然後用以設定高射砲彈信管，達到最大的效果。探照燈對使用光學式投彈瞄準器的轟炸機也能造成相當程度的干擾。
-          p
-            | 二次大戰時期通用電氣製造的探照燈使用陀螺儀式的燈架，直徑達152.4公分鍍銠的盤狀凹面鏡，尖峰輸出達8億蠋光的碳電弧光源，專用的15 千瓦的發電機，有效照距可達45到56公里[1]。
-          p
-            | 由於電子監視設備技術的發展，探照燈的軍事用途日漸減少。現今，多數用於廣告，例如汽車經銷商的促銷活動、電影的首映等。
+          - for( var i=0; i < data.describe.content.length; i++)
+            p= data.describe.content[i]
       .col-md-2
+    //- Q&A
     .row
       .col-md-2
       .col-md-8
         h3 常見問題
         hr
-        .alert.alert-success(role='alert') 請問您最快能多久出貨?
-        blockquote
-          p
-            | 您好，在訂單成立後，小數量訂購能在當天出貨，大量訂購是狀況而定
-        .alert.alert-info(role='alert') 請問燈泡架損毀該如何處製?
-        blockquote
-          p
-            | 傳統省電燈泡並不耐經常點滅及潮濕，對於需要經常點滅或潮濕的場所（例如：浴室、廁所、陽台），電燈泡較省電燈泡更為適合。白熾燈（包含鹵素燈）的光譜是連續而且平均的，擁有極佳演色性的優點；而螢光燈、LED是離散光譜，演色性低，低演色性光源不但會讓人覺得顏色不好看、對於健康及視力也有害。傳統燈泡還有可調光、耐點滅及無汞的優點。
-        .alert.alert-warning(role='alert') 請問能使用多久，淘汰率為何?
-        blockquote
-          p
-            | 鹵素燈泡（Halogen lamp），亦稱鎢鹵燈泡，是白熾燈的一種。原理是在燈泡內注入碘或溴等鹵素氣體。在高溫下，蒸發的鎢絲與鹵素進行化學作用，蒸發的鎢會重新凝固在鎢絲上，形成平衡的循環，避免鎢絲過早斷裂。因此鹵素燈泡比白熾燈更長壽。此外，鹵素燈泡亦能以比一般白熾燈更高的溫度運作，它們的亮度及效率亦更高。不過在這溫度下，普通玻璃可能會軟化。因此鹵素燈泡需要採用熔點更高的熔凝石英或硬的玻璃。而由於石英玻璃不能阻隔紫外線，故此鹵素燈泡通常都而需要另外使用紫外線濾鏡。
+        - for( var i=0; i < data.ques.length; i++)
+          - var color = {class: 'alert-' + data.ques[i].Q.color};
+          .alert(role='alert')&attributes(color)= data.ques[i].Q.text
+          blockquote
+            - for( var j=0; j < data.ques[i].A.content.length; j++)
+              p= data.ques[j].A.content[j]
       .col-md-2
     br
     br
     br
-    br
+    //- type
     .row
       .col-md-2
-      .col-md-4
-        ul.nav.nav-tabs
-          li.active(role='presentation')
-            a(href='#') 型號1
-          li(role='presentation')
-            a(href='#') 型號2
-          li(role='presentation')
-            a(href='#') 型號3
-        br
-        section.table-responsive
-          table.table.table-hover
-            // table-striped
-            thead
-              tr
-                th 規格
-                th 數據
-            tbody
-              tr
-                td 瓦數
-                td 3w
-              tr
-                td 形式
-                td 倒光柱
-              tr
-                td 色溫
-                td 黃光/白光
-              tr
-                td 流明
-                td 1000LM±3%
-              tr
-                td 尺寸
-                td 160x45mm
-      .col-md-6.text-center
-        br
-        br
-        img(src='asset/img/demo.png', height='250px')
-        p 型號1產品實圖
-
-
+      .col-md-8
+        div(role='tabpanel')
+          ul.nav.nav-tabs(role='tablist')
+            //- tab control
+            - for( var i=0; i < data.detail.length; i++)
+              - var active = { '': null};
+              - if( i === 0)
+                - active = { class: 'active'};
+              li(role='presentation')&attributes(active)
+                - var href = { href: '#' + data.detail[i].key }
+                - var ctrl = { 'aria-controls': data.detail[i].key }
+                a(role='tab', data-toggle='tab')&attributes(href)&attributes(ctrl)= data.detail[i].text
+          //- detail table
+          .tab-content
+            br
+            br
+            - for( var i=0; i < data.detail.length; i++)
+              - var active = { '': null};
+              - if( i === 0)
+                - active = { class: 'active'};
+              - var ctrl = { id: data.detail[i].key }
+              .tab-pane(role='tabpanel')&attributes(active)&attributes(ctrl)
+                .container-fluid
+                  .row
+                    .col-md-6
+                      section.table-responsive
+                        table.table.table-hover
+                          thead
+                            tr
+                              th 規格
+                              th 數據
+                          //- detail table row
+                          tbody
+                            - var detail = data.detail[i];
+                            - for( var j=0; j < detail.info.length; j++)
+                              tr
+                                td= detail.info[j].item
+                                td= detail.info[j].params
+                    .col-md-6.text-center
+                      - var img = { src: data.detail[i].img }
+                      img(height='250px')&attributes(img)
+                      p= data.detail[i].imgText
     //- 上下頁扭
-    nav
-      ul.pager
-        li.previous
-          a(href='#')
-            span(aria-hidden='true') ←
-            | &nbsp;前一項
-        li.next
-          a(href='#')
-            | 下一項&nbsp;
-            span(aria-hidden='true') →
+    //- nav
+    //-   ul.pager
+    //-     li.previous
+    //-       a(href='#')
+    //-         span(aria-hidden='true') ←
+    //-         | &nbsp;前一項
+    //-     li.next
+    //-       a(href='#')
+    //-         | 下一項&nbsp;
+    //-         span(aria-hidden='true') →
 
 

@@ -50,6 +50,7 @@ let data = {
 	],
 	detail: [
 		{
+			key: '',
 			text: '',
 			img: '',
 			imgText: '',

@@ -13,6 +13,11 @@ let data = {
 	},
 	good: [
 		{
+			title: '價格',
+			content: '合理的服務收費',
+			color: 'info',
+		},
+		{
 			title: '節能',
 			content: '高效能電池',
 			color: 'success',
@@ -90,7 +95,7 @@ let data = {
 		{
 			Q: {
 				text: '請問燈泡架損毀該如何處製?',
-				color: 'primary',
+				color: 'info',
 			},
 			A: {
 				content: [
@@ -101,7 +106,7 @@ let data = {
 		{
 			Q: {
 				text: '請請問能使用多久，淘汰率為何?',
-				color: 'primary',
+				color: 'warning',
 			},
 			A: {
 				content: [
@@ -113,6 +118,7 @@ let data = {
 	],
 	detail: [
 		{
+			key: 'small',
 			text: '小型',
 			img: 'asset/img/demo.png',
 			imgText: '小型節能探照燈',
@@ -130,12 +136,68 @@ let data = {
 					params: '黃光/白光',
 				},
 				{
-					item: '留名',
+					item: '流明',
 					params: '1000LM±3%',
 				},
 				{
 					item: '尺寸',
 					params: '160x45mm',
+				},
+			]
+		},
+		{
+			key: 'mdivKey',
+			text: '中型',
+			img: 'asset/img/demo.jpg',
+			imgText: '中型節能探照燈',
+			info: [
+				{
+					item: '瓦數',
+					params: '6w',
+				},
+				{
+					item: '形式',
+					params: '倒光柱2',
+				},
+				{
+					item: '色溫',
+					params: '黃光/白光/強光',
+				},
+				{
+					item: '流明',
+					params: '1000LM±3%',
+				},
+				{
+					item: '尺寸',
+					params: '200x100mm',
+				},
+			]
+		},
+		{
+			key: 'large',
+			text: '大型',
+			img: 'asset/img/demo.png',
+			imgText: '中型節能探照燈',
+			info: [
+				{
+					item: '瓦數',
+					params: '12w',
+				},
+				{
+					item: '形式',
+					params: '倒光柱3',
+				},
+				{
+					item: '色溫',
+					params: '白光/強光/炙白光',
+				},
+				{
+					item: '流明',
+					params: '1000LM±3%',
+				},
+				{
+					item: '尺寸',
+					params: '200x100mm',
 				},
 			]
 		},
