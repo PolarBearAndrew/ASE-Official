@@ -1,4 +1,4 @@
-let data = {
+let appbar = {
 	title:  {
 		text: '',
 		url: '',
@@ -8,7 +8,7 @@ let data = {
 			{
 				text: '節能服務',
 				content: [
-					{ text: '節能裝置', url: '/?name=product', },
+					{ text: '節能裝置', url: '/?page=product&name=name_1', },
 					{ text: '節能電路網', url: '', },
 					{ text: '居家電路重構', url: '', },
 					{ text: '家庭用電監控裝置', url: '', },
@@ -51,7 +51,7 @@ let data = {
 			},
 		],
 		link: [
-			{ text: '修繕改裝', url: '', },
+			{ text: '修繕改裝', url: '/?page=service', },
 		],
 	},
 	right: {
@@ -73,4 +73,4 @@ let data = {
 	},
 };
 
-module.exports = data;
+module.exports = appbar;

@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 
-let contentData = require('../data/content.root.js');
-let appbarData = require('../data/appbar.root.js');
+var contentData = require('../data/content.root.js');
+var appbar = require('../data/appbar.js');
 
 //建置static html page
 router.post('/', function(req, res, next) {
@@ -29,13 +29,14 @@ router.post('/', function(req, res, next) {
 //讀取所有一般頁面
 router.get('/', function(req, res, next) {
 
-    let page = req.query.page;
-    let name = req.query.name || 'index';
+    let page = req.query.page || 'home';
+    let name = req.query.name || 'home';
+    let data = contentData[name.toString()];
 
     if (page)
         res.render(page, {
-            data: contentData[name.toString()],
-            appbar: appbarData,
+            data: data,
+            appbar: appbar,
         });
 });
 

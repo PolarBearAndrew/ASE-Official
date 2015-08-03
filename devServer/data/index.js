@@ -1,4 +1,5 @@
-let index = {
+
+let data = {
 	title: '建置屬於您的智慧家庭環境!',
 	subTitle: 'SE提供您 節能、創能、智能以及完整的修繕改裝',
 	btn: 'ASE服務',
@@ -26,4 +27,4 @@ let index = {
 	]
 };
 
-module.exports = index;
+module.exports = data;

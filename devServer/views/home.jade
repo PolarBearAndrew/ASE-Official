@@ -7,8 +7,8 @@ block content
 
   - for( var i = 1; i<=4; i++)
     - var id = {'id': 'tab' + i }
-    - var data = {'data-index': i }
-    div(data-index='1').tab&attributes(id)&attributes(data)
+    - var name = {'data-index': i }
+    div(data-index='1').tab&attributes(id)&attributes(name)
       .container
         .col-md-10
           h3 節能科技
@@ -18,7 +18,7 @@ block content
 
   .jumbotron.bg
     .container
-      h1 建置屬於您的智慧家庭環境!
+      h1= data.title
       p ASE提供您 節能、創能、智能以及水電服務
       p
         a.btn.btn-success.btn-lg(href='#', role='button') 瞭解詳情
@@ -29,7 +29,7 @@ block content
       .row
         - for( var i = 1; i<=4; i++)
           - var id = {'id': 'service' + i }
-          - var data = {'data-index': i }
+          - var name = {'data-index': i }
           .col-xs-6.col-md-3.tabImg&attributes(id)
             a.thumbnail(href='#')
-              img(src='asset/img/buildpower.jpg', height='400px', alt='節能')&attributes(data)
+              img(src='asset/img/buildpower.jpg', height='400px', alt='節能')&attributes(name)
