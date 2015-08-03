@@ -2,8 +2,7 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 
-let productData = require('../data/product.root.js');
-let appbarData = require('../data/appbar.root.js');
+let data = require('../data/root.js');
 
 //建置static html page
 router.post('/', function(req, res, next) {
@@ -29,10 +28,20 @@ router.post('/', function(req, res, next) {
 //讀取所有一般頁面
 router.get('/', function(req, res, next) {
 
-    if (req.query.name)
-        res.render(req.query.name, {
-            data: productData['product_light_1'],
-            appbar: appbarData,
+    console.log('')
+    console.log('')
+    console.log('')
+    console.log('')
+    console.log('dtat',  data['index'])
+    console.log('')
+    console.log('')
+    console.log('')
+    console.log('')
+
+    if (req.query.page)
+        res.render(req.query.page, {
+            appbar: data.appbar,
+            data: data['index'],
         });
 });
 

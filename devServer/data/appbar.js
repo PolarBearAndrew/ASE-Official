@@ -1,4 +1,4 @@
-let data = {
+let appbar = {
 	title:  {
 		text: '',
 		url: '',
@@ -51,7 +51,7 @@ let data = {
 			},
 		],
 		link: [
-			{ text: '修繕改裝', url: '', },
+			{ text: '修繕改裝', url: '/?name=service', },
 		],
 	},
 	right: {
@@ -73,4 +73,4 @@ let data = {
 	},
 };
 
-module.exports = data;
+module.exports = appbar;

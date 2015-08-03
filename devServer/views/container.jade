@@ -26,24 +26,24 @@ html
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             //- 節能產品
-            - var barleft = appbar.left;
-            - for(var i=0; i < barleft.dropdown.length; i++)
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')= barleft.dropdown[i].text
-                  span.caret
-                ul.dropdown-menu(role='menu')
-                  - var content = barleft.dropdown[i].content;
-                  - for(var j=0; j < content.length; j++)
-                    - var href = { href: content[j].url}
-                    - if(content[j].text !== 'divider')
-                      li
-                        a&attributes(href)= content[j].text
-                    - else
-                      li.divider
-            - for(var j=0; j < barleft.link.length; j++)
-              - var href = { href: barleft.link[j].url}
-              li
-                a&attributes(href)= barleft.link[j].text
+            //- - var barleft = appbar.left;
+            //- - for(var i=0; i < barleft.dropdown.length; i++)
+            //-   li.dropdown
+            //-     a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')= barleft.dropdown[i].text
+            //-       span.caret
+            //-     ul.dropdown-menu(role='menu')
+            //-       - var content = barleft.dropdown[i].content;
+            //-       - for(var j=0; j < content.length; j++)
+            //-         - var href = { href: content[j].url}
+            //-         - if(content[j].text !== 'divider')
+            //-           li
+            //-             a&attributes(href)= content[j].text
+            //-         - else
+            //-           li.divider
+            //- - for(var j=0; j < barleft.link.length; j++)
+            //-   - var href = { href: barleft.link[j].url}
+            //-   li
+            //-     a&attributes(href)= barleft.link[j].text
 
           //-
             <form class="navbar-form navbar-right" role="search">
@@ -63,7 +63,7 @@ html
                 span.caret
               ul.dropdown-menu(role='menu')
                 li
-                  a(href='#') 水電服務
+                  a(href='/?name=service') 修繕改裝
                 li
                   a(href='#') 疑問解答
                 li.divider
