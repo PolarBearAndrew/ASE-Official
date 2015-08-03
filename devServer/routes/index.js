@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 
-let productData = require('../data/product.root.js');
+let contentData = require('../data/content.root.js');
 let appbarData = require('../data/appbar.root.js');
 
 //建置static html page
@@ -29,9 +29,12 @@ router.post('/', function(req, res, next) {
 //讀取所有一般頁面
 router.get('/', function(req, res, next) {
 
-    if (req.query.name)
-        res.render(req.query.name, {
-            data: productData['product_light_1'],
+    let page = req.query.page;
+    let name = req.query.name || 'index';
+
+    if (page)
+        res.render(page, {
+            data: contentData[name.toString()],
             appbar: appbarData,
         });
 });
