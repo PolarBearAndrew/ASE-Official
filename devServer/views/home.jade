@@ -10,26 +10,29 @@ block content
     - var name = {'data-index': i }
     div(data-index='1').tab&attributes(id)&attributes(name)
       .container
-        .col-md-10
-          h3 節能科技
-        .col-md-1
+        .col-md-6
+          h3= data.content[i-1].title
+          - for( var j = 0; j<=data.content[i-1].content.length; j++)
+            p= data.content[i-1].content[j]
+          p.text-right
+            a.btn.btn-primary(href='#', role='button')= data.btn
+
   div(data-index='5').tab
     p 只是為了讓上面那個不是最後一個tab
 
   .jumbotron.bg
     .container
       h1= data.title
-      p ASE提供您 節能、創能、智能以及水電服務
+      p= data.subTitle
       p
-        a.btn.btn-success.btn-lg(href='#', role='button') 瞭解詳情
-
+        a.btn.btn-success.btn-lg(href='#', role='button')= data.btn
       br
       br
-
       .row
         - for( var i = 1; i<=4; i++)
           - var id = {'id': 'service' + i }
           - var name = {'data-index': i }
+          - var url = {'src': data.content[i-1].url }
           .col-xs-6.col-md-3.tabImg&attributes(id)
             a.thumbnail(href='#')
-              img(src='asset/img/buildpower.jpg', height='400px', alt='節能')&attributes(name)
+              img(src='', height='400px', alt='節能')&attributes(name)&attributes(url)
