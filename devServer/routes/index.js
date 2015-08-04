@@ -8,6 +8,8 @@ var appbar = require('../data/appbar.js');
 //建置static html page
 router.post('/', function(req, res, next) {
 
+    console.log('post');
+
     var path = 'public/' + req.body.name + '.html';
 
     fs.unlink(path, function() {
@@ -27,11 +29,17 @@ router.post('/', function(req, res, next) {
 });
 
 //讀取所有一般頁面
-router.get('/', function(req, res, next) {
+router.get('/:url', function(req, res, next) {
 
     let page = req.query.page || 'home';
     let name = req.query.name || 'home';
     let data = contentData[name.toString()];
+
+    if(name === 'home'){
+        page = 'home';
+    }else if(name.indexOf('service') != -1){
+        page = 'service';
+    }
 
     if (page)
         res.render(page, {

@@ -8,7 +8,7 @@ let appbar = {
 			{
 				text: '節能服務',
 				content: [
-					{ text: '節能裝置', url: '/?page=product&name=name_1', },
+					{ text: '節能裝置', url: './name_1.html?page=product&name=name_1', },
 					{ text: '節能電路網', url: '', },
 					{ text: '居家電路重構', url: '', },
 					{ text: '家庭用電監控裝置', url: '', },
@@ -51,7 +51,7 @@ let appbar = {
 			},
 		],
 		link: [
-			{ text: '修繕改裝', url: '/?page=service', },
+			{ text: '修繕改裝', url: './service.html?page=service&name=service_1', },
 		],
 	},
 	right: {
