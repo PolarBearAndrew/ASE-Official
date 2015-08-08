@@ -41,11 +41,10 @@ router.get('/:url', function(req, res, next) {
         page = 'service';
     }
 
-    if (page)
-        res.render(page, {
-            data: data,
-            appbar: appbar,
-        });
+    res.render(page, {
+        data: data,
+        appbar: appbar,
+    });
 });
 
 module.exports = router;
