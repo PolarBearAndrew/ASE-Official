@@ -1,0 +1,121 @@
+extends container
+
+block content
+
+    #myCarousel.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='/asset/img/demo-LED-1.jpg', alt='First slide')
+          .container
+            .carousel-caption
+              h1 Example headline.
+              p
+                | Note: If you're viewing this page via a
+                code file://
+                |  URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+        .item
+          img(src='/asset/img/demo-LED-2.jpg', alt='Second slide')
+          .container
+            .carousel-caption
+              h1 Another example headline.
+              p
+                | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+        .item
+          img(src='/asset/img/demo-LED-3.jpg', alt='Third slide')
+          .container
+            .carousel-caption
+              h1 One more for good measure.
+              p
+                | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+    .container.marketing
+      .row
+        .col-lg-4
+          img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 Heading
+          p
+            | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        .col-lg-4
+          img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 Heading
+          p
+            | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        .col-lg-4
+          img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 Heading
+          p
+            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | First featurette heading.
+            span.text-muted It'll blow your mind.
+          p.lead
+            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        .col-md-5
+          img.featurette-image.img-responsive(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-5
+          img.featurette-image.img-responsive(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+        .col-md-7
+          h2.featurette-heading
+            | Oh yeah, it's that good.
+            span.text-muted See for yourself.
+          p.lead
+            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | And lastly, this one.
+            span.text-muted Checkmate.
+          p.lead
+            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        .col-md-5
+          img.featurette-image.img-responsive(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+      hr.featurette-divider
+      footer
+        p.pull-right
+          a(href='#') Back to top
+        p
+          | © 2014 Company, Inc. ·
+          a(href='#') Privacy
+          |  ·
+          a(href='#') Terms
+
+    script(src='/asset/javascripts/default.js')
+    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+    //- script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+    //- script(src='/asset/javascripts/jsBootstrapValidation.js')
+
+    //- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css")
+
+    script(src='/asset/javascripts/default2.js')
+    script(src='/asset/javascripts/default3-bugs.js')
+
+
