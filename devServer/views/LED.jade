@@ -11,7 +11,7 @@ block content
         .item.active
           img(src='/asset/img/demo-LED-1.jpg', alt='First slide')
           .container
-            .carousel-caption
+            //- .carousel-caption
               h1 Example headline.
               p
                 | Note: If you're viewing this page via a
@@ -22,7 +22,7 @@ block content
         .item
           img(src='/asset/img/demo-LED-2.jpg', alt='Second slide')
           .container
-            .carousel-caption
+            //- .carousel-caption
               h1 Another example headline.
               p
                 | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
@@ -31,47 +31,64 @@ block content
         .item
           img(src='/asset/img/demo-LED-3.jpg', alt='Third slide')
           .container
-            .carousel-caption
+            //- .carousel-caption
               h1 One more for good measure.
               p
                 | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+        .item
+          img(src='/asset/img/demo-LED-4.jpg', alt='Fourth slide')
+          .container
+        .item
+          img(src='/asset/img/demo-LED-5.jpg', alt='Five slide')
+          .container
+        .item
+          img(src='/asset/img/demo-LED-6.jpg', alt='Six slide')
+          .container
+        .item
+          img(src='/asset/img/demo-LED-7.jpg', alt='Seven slide')
+          .container
       a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-        span.sr-only Previous
+        span.sr-only 下一張
       a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
         span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-        span.sr-only Next
+        span.sr-only 上一張
     .container.marketing
       .row
         .col-lg-4
-          img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width:140px;height:140px')
-          h2 Heading
+          img.img-circle(src='/asset/img/heading_1.png', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 光學設計
           p
-            | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-          p
-            a.btn.btn-default(href='#', role='button') View details »
+            | 五種投光角度，適應狹窄的穿透光，或適合開闊廠房的高均勻照射範圍。省電、耐點滅、光衰保固，不含紫外線及電磁波，更採用 96% 高透光玻璃鏡頭，更優於鏡頭隨時間老化的 PC 或壓克力材質，讓寬闊的開放式空間也能利用單一光源達成無重影。
+          //- p
+            a.btn.btn-default(href='#', role='button') 穩定光源 »
         .col-lg-4
           img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width:140px;height:140px')
-          h2 Heading
+          h2 散熱設計
           p
-            | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-          p
-            a.btn.btn-default(href='#', role='button') View details »
+            | 專業團隊長達 2 年開發、108 選 1 的最佳解熱技術，完美 PINFIN 比例的弧形散熱片，配上放射狀風洞對劉孔。透過 COB 集成技術，完美結合台製晶粒與銅基板，透過散熱鰭片快速揮發，專業的高速散熱效果。
+            br
+            br
+          //- p
+            a.btn.btn-default(href='#', role='button') 專業技術 »
         .col-lg-4
           img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width:140px;height:140px')
-          h2 Heading
+          h2 安心認證
           p
-            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          p
-            a.btn.btn-default(href='#', role='button') View details »
+            | 全系列燈具通過 IP66 認證，室內室外皆適用。符合 CNS14115 及 CNS14335，品質有保證。絕對台灣製造、 3 年材料保固，保證 2 年光衰 8% 以下。多重認證與信心保固，提供您最優秀的選擇。
+            br
+            br
+          //- p
+            a.btn.btn-default(href='#', role='button') 品質保證 »
       hr.featurette-divider
       .row.featurette
         .col-md-7
           h2.featurette-heading
-            | First featurette heading.
-            span.text-muted It'll blow your mind.
+            | 外型設計
+          h3
+            span.text-muted 髮絲紋質感，全導角處理
           p.lead
             | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
         .col-md-5
@@ -82,20 +99,33 @@ block content
           img.featurette-image.img-responsive(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
         .col-md-7
           h2.featurette-heading
-            | Oh yeah, it's that good.
-            span.text-muted See for yourself.
+            | 外型設計
+          h3
+            span.text-muted 髮絲紋質感，全導角處理
           p.lead
             | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
       hr.featurette-divider
       .row.featurette
         .col-md-7
           h2.featurette-heading
-            | And lastly, this one.
-            span.text-muted Checkmate.
+            | 各種適性規格
+          h3
+            span.text-muted 髮絲紋質感，全導角處理
           p.lead
             | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
         .col-md-5
           img.featurette-image.img-responsive(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-12
+          center
+            - for( var i = 0; i < 5; i++)
+              img.img-circle(src='/asset/img/icon/UL.png', alt='', style='width:80px;height:80px')
+      .row.featurette
+        .col-md-12
+          center
+            - for( var i = 0; i < 9; i++)
+              img.img-circle(src='/asset/img/icon/UL.png', alt='', style='width:80px;height:80px')
       hr.featurette-divider
       footer
         p.pull-right
