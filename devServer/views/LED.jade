@@ -11,22 +11,20 @@ block content
         li(data-target='#myCarousel', data-slide-to='4')
         li(data-target='#myCarousel', data-slide-to='5')
         li(data-target='#myCarousel', data-slide-to='6')
-        li(data-target='#myCarousel', data-slide-to='7')
+        //- li(data-target='#myCarousel', data-slide-to='7')
       .carousel-inner(role='listbox')
         .item.active
           img(src='/asset/img/demo-LED-1.jpg', alt='First slide')
           .container
-            //- .carousel-caption
-              h1 Example headline.
+            .carousel-caption
+              h1 松山台北場 省電照明系統
               p
-                | Note: If you're viewing this page via a
-                code file://
-                |  URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+                | ASE 規劃完整的創能、節能照明系統，同時結合了節能 32 展照明燈具和創能太陽能系統。完整照明無重影，舒服且明亮的投光。ASE 專業客製化的系統設計。
               p
-                a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
-        .item
-          img(src='/asset/img/demo-LED-2.jpg', alt='Second slide')
-          .container
+                a.btn.btn-lg.btn-primary(href='#', role='button') ASE 照明系統
+        //- .item
+        //-   img(src='/asset/img/demo-LED-2.jpg', alt='Second slide')
+        //-   .container
             //- .carousel-caption
               h1 Another example headline.
               p
@@ -108,7 +106,7 @@ block content
             | 120˚：大面積照射範圍，適用於中低高度或要求立面亮度的環境。
             br
             | 120˚ * 90˚：特殊廣角設計，滿足光照需求。
-          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align")
+          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
             span.glyphicon.glyphicon-list-alt(aria-hidden="true")
             |     詳細規格
       hr
@@ -154,6 +152,89 @@ block content
           | Address： 220 新北市本橋區四川路二段 58 號
           br
           | © 2015 ASE intelligent Technology Co. Ltd
+      //- Dialog
+      #spec.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+        .modal-dialog.modal-lg
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal')
+                span(aria-hidden='true') ×
+                span.sr-only Close
+              h4.modal-title 照明燈具規格參考
+            .modal-body
+              table.table.table-hover
+                thead
+                  th 照度對應(Lux)
+                  th 6 m
+                  th 7 m
+                  th 8 m
+                  th 9 m
+                  th 10 m
+                  th 11 m
+                  th 12 m
+                  th 15 m
+                tbody
+                  tr
+                    td 60 w
+                    td 155
+                    td 114
+                    td 87
+                    td 69
+                    td 56
+                    td 46
+                    td 39
+                    td 25
+                  tr
+                    td 80 w
+                    td 207
+                    td 152
+                    td 116
+                    td 92
+                    td 75
+                    td 62
+                    td 52
+                    td 33
+                  tr
+                    td 100 w
+                    td 259
+                    td 190
+                    td 146
+                    td 115
+                    td 93
+                    td 77
+                    td 65
+                    td 41
+                  tr
+                    td 120 w
+                    td 311
+                    td 228
+                    td 175
+                    td 138
+                    td 112
+                    td 93
+                    td 78
+                    td 50
+                  tr
+                    td 150 w
+                    td 389
+                    td 286
+                    td 219
+                    td 173
+                    td 140
+                    td 116
+                    td 97
+                    td 62
+                  tr
+                    td 180 w
+                    td 469
+                    td 345
+                    td 264
+                    td 208
+                    td 169
+                    td 140
+                    td 117
+                    td 75
+
 
     script(src='/asset/javascripts/default.js')
     //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
@@ -166,5 +247,3 @@ block content
 
     script(src='/asset/javascripts/default2.js')
     script(src='/asset/javascripts/default3-bugs.js')
-
-
