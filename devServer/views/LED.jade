@@ -17,29 +17,14 @@ block content
           img(src='/asset/img/demo-LED-1.jpg', alt='First slide')
           .container
             .carousel-caption
-              h1 松山台北場 省電照明系統
+              h1 台北松山廠 省電照明系統
               p
                 | ASE 規劃完整的創能、節能照明系統，同時結合了節能 32 展照明燈具和創能太陽能系統。完整照明無重影，舒服且明亮的投光。ASE 專業客製化的系統設計。
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') ASE 照明系統
-        //- .item
-        //-   img(src='/asset/img/demo-LED-2.jpg', alt='Second slide')
-        //-   .container
-            //- .carousel-caption
-              h1 Another example headline.
-              p
-                | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              p
-                a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
         .item
           img(src='/asset/img/demo-LED-3.jpg', alt='Third slide')
           .container
-            //- .carousel-caption
-              h1 One more for good measure.
-              p
-                | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              p
-                a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
         .item
           img(src='/asset/img/demo-LED-4.jpg', alt='Fourth slide')
           .container
@@ -97,8 +82,6 @@ block content
           h3
             span.text-muted 選配最適合的投光燈具
           p.lead
-            | 25˚：極薄、極亮、IP67 防水，各類型車頭頂照明。
-            br
             | 60˚：高穿透性光源，適用於較高或狹窄的環境。
             br
             | 90˚：高均勻度光照，適用於一般高度或開闊的還性。
@@ -106,6 +89,8 @@ block content
             | 120˚：大面積照射範圍，適用於中低高度或要求立面亮度的環境。
             br
             | 120˚ * 90˚：特殊廣角設計，滿足光照需求。
+            br
+            | 另有 25˚：極薄、極亮、IP67 防水，各類型車頭頂照明。
           Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
             span.glyphicon.glyphicon-list-alt(aria-hidden="true")
             |     詳細規格
@@ -162,6 +147,27 @@ block content
                 span.sr-only Close
               h4.modal-title 照明燈具規格參考
             .modal-body
+              - var imgWidth = 100;
+              .container
+                img(src='/asset/img/all-led/100W HBAY.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/100W SLIGHT.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/150W HBAY.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/150W SLIGHT.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/100W HBAY.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/200W HBAY.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/200W SLIGHT.png', alt='', style="max-width:" + imgWidth + "px")
+                img(src='/asset/img/all-led/300W SLIGHT.png', alt='', style="max-width:" + imgWidth + "px")
+              div
+                span(style='margin:15px') 100W-HBAY
+                span(style='margin:15px') 100W-SLIGHT
+                span(style='margin:3px') 150W-HBAY
+                span(style='margin:8px') 150W-SLIGHT
+                span(style='margin:8px') 100W-HBAY
+                span(style='margin:15px') 200W-HBAY
+                span(style='margin:7px') 200W-SLIGHT
+                span(style='margin:10px') 300W-SLIGHT
+              br
+              br
               table.table.table-hover
                 thead
                   th 照度對應(Lux)
