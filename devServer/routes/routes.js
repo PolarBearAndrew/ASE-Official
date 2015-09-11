@@ -1,8 +1,8 @@
 var express = require('express');
 var router  = express.Router();
 
-router.get('/LED', (req, res, next) => {
-  res.render('LED')
+router.get('/:page', (req, res, next) => {
+  res.render(req.params.page)
 });
 
 module.exports = router;

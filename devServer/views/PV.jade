@@ -1,0 +1,178 @@
+extends container
+
+block content
+
+    #myCarousel.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+        li(data-target='#myCarousel', data-slide-to='3')
+        li(data-target='#myCarousel', data-slide-to='4')
+        li(data-target='#myCarousel', data-slide-to='5')
+        li(data-target='#myCarousel', data-slide-to='6')
+        //- li(data-target='#myCarousel', data-slide-to='7')
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='/asset/img/pv/pic3.png', alt='First slide')
+          .container
+            .carousel-caption
+              h1 台南埔里大型創能系統
+              p
+                | ASE 規劃完整的創能、儲電系統，同時結合了創能太陽能系統並儲電並能賣回給台電。完整自動化運作，提供乾淨的綠色創能，同事亦配上長期穩定的收益。
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') ASE 創能系統
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only 下一張
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only 上一張
+    .container.marketing
+      .row
+        .col-lg-4
+          img.img-circle(src='/asset/img/heading/heading_1.png', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 適應氣候
+          p
+            | CNS 11526，SPV系列具有能承受 SPV 3600 帕和 BIPV 7200 帕抗壓能力，透過系統化規劃建置，能只接與建築物一體成型。完全適應安裝在高溫和多風的地區。
+        .col-lg-4
+          img.img-circle(src='/asset/img/pv/ex-01.jpg', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 特殊防護
+          p
+            | 鹽霧腐蝕的特殊防護，通過 TÜVIEC 61701 認證，ASE 採用的光伏組件抗鹽和霧腐蝕，配合上高抗風的能力，讓 PV 太陽能面板安裝在沿海地區仍然保持良好的狀態。
+        .col-lg-4
+          img.img-circle(src='/asset/img/pv/ac4.png', alt='Generic placeholder image', style='width:140px;height:140px')
+          h2 安心防火
+          p
+            | 通過 IEC 61215、UL 790 的防火測試，剛效能的太陽能板能產生的直流電高達1000 V，ASE 採用通過嚴格防火測試的組件系統，將風險降至最低。放置在屋頂上承受太陽直射也無須擔心。
+      hr
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | 品質保證
+          h3
+            span.text-muted ASE 除了提供完善的服務，更提供完美的品質。
+          p.lead
+            | 採用技術龍頭 Inventec PV 創能太陽能面板，在專業的全無塵產線通過機械的智能篩選，嚴格的四道品質管控，以及全面性的測試，保障 PV 太陽能板的穩定性與效能。
+            | 除此之外通過無數的國際認證與無數國際使用個案。
+        .col-md-5
+          img.featurette-image.img-responsive(src='/asset/img/pv/pv1.png', alt='產品設計圖')
+      hr
+      .row.featurette
+        .col-md-5
+          br
+          br
+          br
+          img.featurette-image.img-responsive(src='/asset/img/pv/pv2.png', alt='Generic placeholder image' style="margin-left:32px")
+        .col-md-7
+          h2.featurette-heading
+            | 業界首選 Inventec PV 板塊
+          h3
+            span.text-muted ASE 絕對選用最高品質 PV 板塊
+          p.lead
+            | 擁有 6×10 @ 280Wp 認證產品的 PV 板塊
+            br
+            | 擁有 6x12 @ 330Wp模塊，適用於大規模系統建置
+            br
+            | 高效能 6“ 多晶矽或單晶矽
+            br
+            | 正公差高達+ 5WP
+            br
+            | 高強度風荷載 2400 帕和雪荷載 5400 年利率
+            br
+            | 由 CHUBB Error and Omission (E&O) 保險投保
+          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
+            span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+            |     詳細規格
+      hr
+      .row.featurette
+        br
+        .col-md-7
+          h2.featurette-heading
+            | 專業系統工程
+          h3
+            span.text-muted 完整系統建置工程
+          p.lead
+            | ASE 專業系統工程建置完整的系統，除了PV太陽創能系統本身，包含了完整的
+            a(href='#') &nbsp;電力系統&nbsp;
+            | 建置，專業並同步系統規劃
+            a(href='#') &nbsp;節能&nbsp;
+            | 、
+            a(href='#') &nbsp;創能&nbsp;
+            | 、
+            a(href='#') &nbsp;智能&nbsp;
+            | 一次大規模的完成整套創能電網與儲電或配電系統，無論是舊式系統改裝、全新的系統建置，ASE 皆有相關專業服務。
+        .col-md-5
+          br
+          img.featurette-image.img-responsive(src='/asset/img/pv/pic5.png', alt='Generic placeholder image')
+      hr
+      .row.featurette
+        br
+        .col-md-5
+          img.featurette-image.img-responsive(src='/asset/img/body/demo.png', alt='Generic placeholder image')
+        .col-md-7
+          include ESCO-story.jade
+
+      hr
+      - var iconSize = 57;
+      .row.featurette
+        .col-md-12
+          center
+            - for( var i = 1; i <= 4; i++)
+              img.img-circle(src='/asset/img/pv/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+            br
+            - for( var i = 5; i <= 12; i++)
+              img.img-circle(src='/asset/img/pv/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+            br
+            br
+            h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
+      //- .row.featurette
+      hr.featurette-divider
+      include footer.jade
+      //- Dialog
+      #spec.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+        .modal-dialog.modal-lg
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal')
+                span(aria-hidden='true') ×
+                span.sr-only Close
+              h4.modal-title 照明燈具規格參考
+            .modal-body
+              - var imgWidth = 100;
+              .container
+                img(src='/asset/img/all-led/100W HBAY.png', alt='', style="max-width:" + imgWidth + "px")
+
+              br
+              br
+              table.table.table-hover
+                thead
+                  th 225Wp
+                  th 250Wp
+                  th 300Wp
+                tbody
+                  tr
+                    td 15.2%
+                    td 15.3%
+                    td 15.4%
+                  tr
+                    td cell matrix: 6 x 9
+                    td cell matrix: 6 x 10
+                    td cell matrix: 6 x 12
+                  tr
+                    td 1496 x 989 x 39mm
+                    td 1455 x 989 x 39mm
+                    td 1973 x 989 x 39mm
+
+
+    script(src='/asset/javascripts/default.js')
+    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+    //- script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+    //- script(src='/asset/javascripts/jsBootstrapValidation.js')
+
+    //- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css")
+
+    script(src='/asset/javascripts/default2.js')
+    script(src='/asset/javascripts/default3-bugs.js')
