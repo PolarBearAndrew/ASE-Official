@@ -44,7 +44,7 @@ block content
     .container.marketing
       .row
         .col-lg-4
-          img.img-circle(src='/asset/img/heading/heading_1.png', alt='Generic placeholder image', style='width:140px;height:140px')
+          img.img-circle(src='/asset/img/pv/ex-03.png', alt='Generic placeholder image', style='width:140px;height:140px')
           h2 適應氣候
           p
             | CNS 11526，SPV系列具有能承受 SPV 3600 帕和 BIPV 7200 帕抗壓能力，透過系統化規劃建置，能只接與建築物一體成型。完全適應安裝在高溫和多風的地區。
@@ -152,27 +152,39 @@ block content
                 span.sr-only Close
               h4.modal-title 照明燈具規格參考
             .modal-body
-              - var imgWidth = 100;
+              - var imgWidth = 150;
+              style.
+                .pvImg:first-child{
+                  margin-left:100px;
+                }
+                .pvImg{
+                  margin-left:100px;
+                }
               .container
-                img(src='/asset/img/all-led/100W HBAY.png', alt='', style="max-width:" + imgWidth + "px")
+                .row
+                  img.pvImg(src='/asset/img/pv/pv-orignal-1.png', alt='', style="max-width:" + imgWidth + "px")
+                  img.pvImg(src='/asset/img/pv/pv-orignal-2.png', alt='', style="max-width:" + imgWidth + "px")
+                  img.pvImg(src='/asset/img/pv/pv-orignal-3.png', alt='', style="max-width:" + imgWidth + "px")
 
-              br
-              br
               table.table.table-hover
                 thead
+                  th 瓦數
                   th 225Wp
                   th 250Wp
                   th 300Wp
                 tbody
                   tr
+                    td 轉換效能
                     td 15.2%
                     td 15.3%
                     td 15.4%
                   tr
+                    td 陣列數
                     td cell matrix: 6 x 9
                     td cell matrix: 6 x 10
                     td cell matrix: 6 x 12
                   tr
+                    td 尺寸
                     td 1496 x 989 x 39mm
                     td 1455 x 989 x 39mm
                     td 1973 x 989 x 39mm
