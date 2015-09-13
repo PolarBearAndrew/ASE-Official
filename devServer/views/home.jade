@@ -4,9 +4,14 @@ extends container
 block content
   //- script(src='/Scripts/AssetsBS3/ie-emulation-modes-warning.js')
   link(href='/asset/stylesheets/home.css', rel='stylesheet')
+  style.
+    body{
+    padding:0px
+    }
   //- body
   .site-wrapper
-    .site-wrapper-inner(style="padding-top:40px")
+    .site-wrapper-inner(style="background-color:white; background-size:cover; background-image:url(/asset/img/bg/bg-LED.png); opacity:1;")
+      //- img(style="heigh:100%; width: 100%; " src='/asset/img/demo-LED-1.jpg')
       .cover-container
         //- .masthead.clearfix
           //- .inner
@@ -20,7 +25,7 @@ block content
           //-       li
           //-         a(href='/ESCO') ESCO 合作模式
 
-        .inner.cover
+        .inner.cover(style="z-index:10; opacity:1;")
           h1.cover-heading ASE Intelligent Technology
           p.lead
             | ASE 提供完整的系統規劃與建置服務，分為 節能、創能、智能 與修繕改裝，無論建置全新的電力網系統，配上節能的照明或智能控管，ASE 提空您專業的規劃與系統性的服務。並結合 ESCO 合作模式，讓您更安心、放心，建置專屬的綠色能源系統。
