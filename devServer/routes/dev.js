@@ -10,16 +10,13 @@ var queryString = require('../feature/queryString.js');
 //read page (using on dev)
 router.get('/', (req, res, next) => {
 
-	if( req.query.page !== undefined && req.query.data !== undefined){
+	if( req.query.page !== undefined){
 
-		let page	 = req.query.page;  // using jade page
-		let data	 = req.query.data;  // using data
-		let appbar = db.appbar || {}; // appbar data
-    let title  = page + '/' + data;
+		let page	 = req.query.page;
 
-    // console.log('db[data]', db[data]);
+    console.log('page', page);
 
-		res.render( page, { appbar: appbar, data: db[data], page: page }); // output, title: title
+		res.render(page);
 
 	}else{ return next('頁面不存在'); }
 });
@@ -33,11 +30,13 @@ router.get('/build', (req, res, next) => {
 
   list.forEach( ( val, index ) => {
 
-    let name = val.page + '_' + val.data;
+    let name = val.page;
+
+    console.log('page', val.page)
 
     // request file
     request({
-      url:  queryString( 'http://127.0.0.1:8080/', { page: val.page, data: val.data } ),
+      url:  queryString( 'http://127.0.0.1:8080/dev/', { page: val.page } ),
       method: 'GET'
 
     },( err, res, data ) => {

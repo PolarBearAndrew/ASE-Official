@@ -3,7 +3,7 @@ extends container
 
 block content
   //- script(src='/Scripts/AssetsBS3/ie-emulation-modes-warning.js')
-  //- link(href='/asset/stylesheets/home.css', rel='stylesheet')
+  //- link(href='asset/stylesheets/home.css', rel='stylesheet')
   style.
     body{
     padding:0px;
@@ -20,23 +20,23 @@ block content
       li(data-target='#myCarousel', data-slide-to='4')
     .carousel-inner(role='listbox' )
       .item.active
-        img(src='/asset/img/bg/bg-contact.png', alt='Third slide')
+        img(src='asset/img/bg/bg-contact.png', alt='Third slide')
         .container
           .carousel-caption
             h1 ESCO 合作模式
-            a.btn.btn-default(src="/ESCO", style="opacity:0.8;") ASE 合作模式
+            a.btn.btn-default(src="./ESCO.html", style="opacity:0.8;") ASE 合作模式
       .item
-        img(src='/asset/img/bg/bg-LED.png', alt='First slide')
+        img(src='asset/img/bg/bg-LED.png', alt='First slide')
         .container
           .carousel-caption
             h1 ASE 節能服務
-            a.btn.btn-default(src="/LED", style="opacity:0.8;") LED 照明系統
+            a.btn.btn-default(src="./LED.html", style="opacity:0.8;") LED 照明系統
       .item
-        img(src='/asset/img/bg/bg-PV.png', alt='Third slide')
+        img(src='asset/img/bg/bg-PV.png', alt='Third slide')
         .container
           .carousel-caption
             h1 ASE 創能服務
-            a.btn.btn-default(src="/PV", style="opacity:0.8;") PV 太陽能系統
+            a.btn.btn-default(src="./PV.html", style="opacity:0.8;") PV 太陽能系統
     a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
       span.sr-only 下一張

@@ -7,11 +7,11 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
 
-    //- link(rel='icon', href='/Content/AssetsBS3/img/favicon.ico')
+    //- link(rel='icon', href='./Content/AssetsBS3/img/favicon.ico')
     title ASE Intelligent Technology
 
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', rel='stylesheet')
-    link(href='/asset/stylesheets/default.css', rel='stylesheet')
+    link(href='asset/stylesheets/default.css', rel='stylesheet')
 
 
   body
@@ -26,7 +26,7 @@ html(lang='en')
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-              a.navbar-brand(href='/home') ASE Intelligent Technology
+              a.navbar-brand(href='./home.html') ASE Intelligent Technology
             #navbar.navbar-collapse.collapse
               ul.nav.navbar-nav
                 li.dropdown
@@ -35,21 +35,21 @@ html(lang='en')
                     span.caret
                   ul.dropdown-menu(role='menu')
                     li
-                      a(href='/LED') 節能照明系統
+                      a(href='./LED.html') 節能照明系統
                 li.dropdown
                   a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     | 創能產品
                     span.caret
                   ul.dropdown-menu(role='menu')
                     li
-                      a(href='/PV') PV 太陽能系統
+                      a(href='./PV.html') PV 太陽能系統
               ul.nav.navbar-nav.navbar-right
                 li
                   a(href='#contact', data-toggle='modal', data-target='#contect') 聯絡我們
                 li
-                  a(href='/ESCO') ESCO 合作模式
+                  a(href='./ESCO.html') ESCO 合作模式
                 //- li
-                //-   a(href='/about') 關於 ASE
+                //-   a(href='./about') 關於 ASE
     #contect.active.modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
       .modal-dialog.modal-md
         .modal-content
