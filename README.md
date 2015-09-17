@@ -6,3 +6,4 @@
 
 前端框架以 Bootstrap V3 為主。
 
+ASE Intech 官方網站：[http://www.asetaiwan.com/](http://www.asetaiwan.com/)
