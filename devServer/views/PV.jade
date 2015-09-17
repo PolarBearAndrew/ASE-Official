@@ -145,44 +145,43 @@ block content
               button.close(type='button', data-dismiss='modal')
                 span(aria-hidden='true') ×
                 span.sr-only Close
-              h4.modal-title 照明燈具規格參考
+              h4.modal-title 太陽能板
             .modal-body
-              - var imgWidth = 150;
+              - var imgWidth = '800px';
               style.
-                .pvImg:first-child{
-                  margin-left:100px;
-                }
                 .pvImg{
-                  margin-left:100px;
+                  margin: 0 auto;
+                  margin-left: 30px;
                 }
               .container
                 .row
-                  img.pvImg(src='asset/img/pv/pv-orignal-1.png', alt='', style="max-width:" + imgWidth + "px")
-                  img.pvImg(src='asset/img/pv/pv-orignal-2.png', alt='', style="max-width:" + imgWidth + "px")
-                  img.pvImg(src='asset/img/pv/pv-orignal-3.png', alt='', style="max-width:" + imgWidth + "px")
+                    img.pvImg(src='asset/img/pv/spec01.png', alt='', style="max-width:" + imgWidth )
+                    img.pvImg(src='asset/img/pv/spec02.png', alt='', style="max-width:" + imgWidth )
+                    img.pvImg(src='asset/img/pv/spec03.png', alt='', style="max-width:" + imgWidth )
 
-              table.table.table-hover
-                thead
-                  th 瓦數
-                  th 225Wp
-                  th 250Wp
-                  th 300Wp
-                tbody
-                  tr
-                    td 轉換效能
-                    td 15.2%
-                    td 15.3%
-                    td 15.4%
-                  tr
-                    td 陣列數
-                    td cell matrix: 6 x 9
-                    td cell matrix: 6 x 10
-                    td cell matrix: 6 x 12
-                  tr
-                    td 尺寸
-                    td 1496 x 989 x 39mm
-                    td 1455 x 989 x 39mm
-                    td 1973 x 989 x 39mm
+
+              //- table.table.table-hover
+              //-   thead
+              //-     th 瓦數
+              //-     th 225Wp
+              //-     th 250Wp
+              //-     th 300Wp
+              //-   tbody
+              //-     tr
+              //-       td 轉換效能
+              //-       td 15.2%
+              //-       td 15.3%
+              //-       td 15.4%
+              //-     tr
+              //-       td 陣列數
+              //-       td cell matrix: 6 x 9
+              //-       td cell matrix: 6 x 10
+              //-       td cell matrix: 6 x 12
+              //-     tr
+              //-       td 尺寸
+              //-       td 1496 x 989 x 39mm
+              //-       td 1455 x 989 x 39mm
+              //-       td 1973 x 989 x 39mm
 
 
     script(src='asset/javascripts/default.js')
