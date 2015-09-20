@@ -6,7 +6,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/:page', (req, res, next) => {
-  res.render(req.params.page)
+  res.render(req.params.page.replace(/.html/, ''))
 });
 
 module.exports = router;
