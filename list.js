@@ -4,6 +4,8 @@
 var list = [
   { page: 'home', data: '' },
   { page: 'LED', data: '' },
+  { page: 'Fix', data: '' },
+  { page: 'Smart', data: '' },
   { page: 'PV', data: '' },
   { page: 'ESCO', data: '' }
 ];
