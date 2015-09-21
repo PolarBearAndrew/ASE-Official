@@ -97,8 +97,19 @@ block content
           br
           | 120˚ * 90˚：特殊廣角設計，滿足光照需求。
           br
-          | 另有 25˚：極薄、極亮、IP67 防水，各類型車頭頂照明。
+          br
         Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
+          span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+          |     詳細規格
+        br
+        br
+        br
+        br
+        br
+        h3 各類型車室專用燈
+        p.lead
+          | 25˚：極薄、極亮、IP67 防水。
+        Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
           span.glyphicon.glyphicon-list-alt(aria-hidden="true")
           |     詳細規格
     hr
@@ -245,6 +256,95 @@ block content
                   td 140
                   td 117
                   td 75
+    #spec2.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4.modal-title 車室照明燈
+          .modal-body
+            .container
+              .col-md-1
+              .col-md-7
+                table.table.table-hover(style="text-align:center")
+                  thead
+                    tr
+                      td
+                        b LED 規格
+                      td RL-C-9
+                      td RL-C-12
+                      td RL-C-16
+                  tbody
+                    tr
+                      td 電壓
+                      td ≥12V
+                      td ≥24V
+                      td ≥24V
+                    tr
+                      td 功率
+                      td 9W
+                      td 12W
+                      td 16W
+                    tr
+                      td 光通量
+                      td 990lm
+                      td 1320lm
+                      td 1760lm
+                    tr
+                      td 色溫
+                      td 白
+                      td(colspan="2") 黃/暖白/白
+                    tr
+                      td 角度
+                      td(colspan="3") 140˚ / 60˚
+                    tr
+                      td 顏色
+                      td(colspan="3") 黑/白
+                    tr
+                      td 重量
+                      td(colspan="3") 250g
+                    tr
+                      td 尺寸
+                      td(colspan="3") ø115mm*21mm(H)
+                    tr
+                      td 保固期限
+                      td(colspan="3") 一年
+                br
+                .container
+                  .col-md-3
+                    table.table.table-hover
+                      tr
+                        td(colspan="3") 60˚
+                      tr
+                        td 距離(M)
+                        td 照度(LUX)
+                        td 範圍(M)
+                      tr
+                        td 1
+                        td 1900
+                        td ø 1.5
+                      tr
+                        td 2
+                        td 500
+                        td ø 2.5
+                  .col-md-3
+                    table.table.table-hover(style="margin-left:70px")
+                      tr
+                        td(colspan="3") 60˚
+                      tr
+                        td 距離(M)
+                        td 照度(LUX)
+                        td 範圍(M)
+                      tr
+                        td 1
+                        td 700
+                        td ø 5
+                      tr
+                        td 2
+                        td 220
+                        td ø 9
 
 
   script(src='asset/javascripts/default.js')

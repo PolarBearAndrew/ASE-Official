@@ -87,7 +87,7 @@ block content
             br
             | 正公差高達+ 5WP
             br
-            | 高強度風荷載 2400 Pa 和雪荷載 5400 年利率
+            | 高強度的風壓 2400 Pa 和 荷重 5400 Pa
             br
             | 由 CHUBB Error and Omission (E&O) 保險投保
           Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
@@ -112,13 +112,6 @@ block content
         .col-md-5
           br
           img.featurette-image.img-responsive(src='asset/img/pv/pic5.png', alt='Generic placeholder image')
-      //- hr
-      //- .row.featurette
-      //-   br
-      //-   .col-md-5
-      //-     img.featurette-image.img-responsive(src='asset/img/ESCO/story.png', alt='Generic placeholder image')
-      //-   .col-md-7
-      //-     include ESCO-story.jade
 
       hr
       - var iconSize = 57;
@@ -153,35 +146,14 @@ block content
                   margin-left: 30px;
                 }
               .container
+                - var s = 'margin-top:-30px'
                 .row
-                    img.pvImg(src='asset/img/pv/spec01.png', alt='', style="max-width:" + imgWidth )
-                    img.pvImg(src='asset/img/pv/spec02.png', alt='', style="max-width:" + imgWidth )
-                    img.pvImg(src='asset/img/pv/spec03.png', alt='', style="max-width:" + imgWidth )
-
-
-              //- table.table.table-hover
-              //-   thead
-              //-     th 瓦數
-              //-     th 225Wp
-              //-     th 250Wp
-              //-     th 300Wp
-              //-   tbody
-              //-     tr
-              //-       td 轉換效能
-              //-       td 15.2%
-              //-       td 15.3%
-              //-       td 15.4%
-              //-     tr
-              //-       td 陣列數
-              //-       td cell matrix: 6 x 9
-              //-       td cell matrix: 6 x 10
-              //-       td cell matrix: 6 x 12
-              //-     tr
-              //-       td 尺寸
-              //-       td 1496 x 989 x 39mm
-              //-       td 1455 x 989 x 39mm
-              //-       td 1973 x 989 x 39mm
-
+                  h1(style="margin-top:0px") SPV 系列
+                  img.pvImg(src='asset/img/pv/spec01.png', alt='', style="max-width:" + imgWidth )
+                  h1(style=s) BIPV 系列
+                  img.pvImg(src='asset/img/pv/spec02.png', alt='', style="max-width:" + imgWidth )
+                  h1(style=s) Black Knight 系列
+                  img.pvImg(src='asset/img/pv/spec03.png', alt='', style="max-width:" + imgWidth )
 
     script(src='asset/javascripts/default.js')
     //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
