@@ -4,19 +4,19 @@ block content
   .container
     .row
       .col-md-1
-      .col-md-10
+      .col-md-11
         style.
           body{
-          background-color: #CECECE;
           padding-top: 120px
           }
           iframe{
           width: 100%;
-          height: 600px;
+          overflow: hidden;
           }
-        iframe(src="http://mrpv.org.tw/uploads/images/1040126_%E6%B5%81%E7%A8%8B%E5%9C%96.png", frameborder="0")
-        hr
-        iframe(src="http://mrpv.org.tw/uploads/images/progress-03.png", frameborder="0")
+        img(src="http://mrpv.org.tw/templates/default/img/logo.png")
+        iframe(src="http://mrpv.org.tw/uploads/images/1040126_%E6%B5%81%E7%A8%8B%E5%9C%96.png", frameborder="0" height="1250")
+        iframe(src="http://mrpv.org.tw/uploads/images/progress-03.png", frameborder="0"  style="height:700px; margin-left:85px")
+        iframe(src="http://mrpv.org.tw/uploads/images/progress-04.png", frameborder="0"  style="height:700px; margin-left:85px")
 
 
   script(src='asset/javascripts/default.js')

@@ -51,6 +51,9 @@ html(lang='en')
                   ul.dropdown-menu(role='menu')
                     li
                       a(href='./PV.html') PV 太陽能系統
+                    li.divider
+                    li
+                      a(href='./PVset.html') 太陽能申設流程圖
                 li.dropdown
                   a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     | 智能監控
@@ -68,8 +71,15 @@ html(lang='en')
               ul.nav.navbar-nav.navbar-right
                 li
                   a(href='#contact', data-toggle='modal', data-target='#contect') 聯絡我們
-                li
-                  a(href='./ESCO.html') ESCO 合作模式
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    | 合作資訊
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='./ESCO.html') ESCO 合作模式
+                    li
+                      a(href='./LINK.html') 相關資訊
                 //- li
                 //-   a(href='./about') 關於 ASE
     #contect.active.modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
