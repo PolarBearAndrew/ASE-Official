@@ -7,16 +7,27 @@ var db      = require('../data/index.js');
 var file    = require('../feature/fs.js');
 var queryString = require('../feature/queryString.js');
 
+//data
+var data = [];
+
+data['Supply'] = require('../data/supply.js');
+
 //read page (using on dev)
 router.get('/', (req, res, next) => {
 
 	if( req.query.page !== undefined){
 
-		let page	 = req.query.page;
+    let tmp;
+    let page   = req.query.page;
+		let useData	 = req.query.data;
+
+    if(useData !== ''){
+      tmp = data[useData];
+    }
 
     console.log('page', page);
 
-		res.render(page);
+		res.render( page, { data: tmp } );
 
 	}else{ return next('頁面不存在'); }
 });
@@ -36,7 +47,7 @@ router.get('/build', (req, res, next) => {
 
     // request file
     request({
-      url:  queryString( 'http://127.0.0.1:8080/dev/', { page: val.page } ),
+      url:  queryString( 'http://127.0.0.1:8080/dev/', { page: val.page, data: val.data } ),
       method: 'GET'
 
     },( err, res, data ) => {

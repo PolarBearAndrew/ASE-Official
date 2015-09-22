@@ -3,12 +3,15 @@
 
 var list = [
   // { page: 'index', data: '' },
+  { page: 'ESCO', data: '' },
+  { page: 'Fix', data: '' },
   { page: 'home', data: '' },
   { page: 'LED', data: '' },
-  { page: 'Fix', data: '' },
-  { page: 'Smart', data: '' },
+  { page: 'Money', data: '' },
   { page: 'PV', data: '' },
-  { page: 'ESCO', data: '' }
+  { page: 'PVset', data: '' },
+  { page: 'Smart', data: '' },
+  { page: 'Supply', data: 'Supply' }
 ];
 	// { page: 'product', data: 'product-1' },
 
