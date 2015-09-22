@@ -12,6 +12,11 @@ router.get('/Supply', (req, res, next) => {
   res.render('Supply', { data: supply} );
 });
 
+router.get('/Supply.html', (req, res, next) => {
+
+  res.render('Supply', { data: supply} );
+});
+
 router.get('/:page', (req, res, next) => {
   res.render(req.params.page.replace(/.html/, ''))
 });

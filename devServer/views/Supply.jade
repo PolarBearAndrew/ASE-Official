@@ -4,7 +4,7 @@ block content
   style.
     body{
     padding-top:120px;
-    background-color: #CECECE
+    //-  background-color: #CECECE
     }
 
   .container
@@ -25,3 +25,4 @@ block content
                     a.btn.btn-primary(href=tmp.url target="_blank" ) 瞭解更多
             - if( i == parseInt( data.length /4 ) * ( col + 1 ) )
               - i++; break;
+    include footer
