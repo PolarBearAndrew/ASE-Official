@@ -8,7 +8,7 @@ block content
         li(data-target='#myCarousel', data-slide-to='2')
         li(data-target='#myCarousel', data-slide-to='3')
         li(data-target='#myCarousel', data-slide-to='4')
-        //- li(data-target='#myCarousel', data-slide-to='5')
+        li(data-target='#myCarousel', data-slide-to='5')
         //- li(data-target='#myCarousel', data-slide-to='6')
         //- li(data-target='#myCarousel', data-slide-to='7')
         //- li(data-target='#myCarousel', data-slide-to='8')
@@ -47,23 +47,22 @@ block content
           .container
             .carousel-caption
               h1 台北市士東市場 PV 太陽能系統
-        //- .item
-        //-   img(src='asset/img/pv/demo07.png', alt='First slide')
-        //-   .container
-        //-     .carousel-caption
-        //-       h1 平溪國小
+        .item
+          img(src='asset/img/pv/demo07.png', alt='First slide')
+          .container
+            .carousel-caption
+              h1 平溪國小
         .item
           img(src='asset/img/pv/demo08.png', alt='First slide')
           .container
             .carousel-caption
-              h1 花蓮 PV 太陽能板用戶
+              h1 花蓮農工 PV 太陽能板用戶
         .item
           img(src='asset/img/pv/demo09.png', alt='First slide')
           .container
             .carousel-caption
               h1 雲林大屯國小
-              //- p
-              //-   | ASE 規劃完整的創能、儲電系統，無論是大規模的系統建置，或是一般用戶的家庭規模，接有適用的 ASE 系統。
+
       a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
         span.sr-only 下一張
@@ -76,12 +75,12 @@ block content
           img.img-circle(src='asset/img/pv/ex-03.png', alt='Generic placeholder image', style='width:140px;height:140px')
           h2 適應氣候
           p
-            | CNS 11526，SPV系列具有能承受 SPV 3600 Pa 和 BIPV 7200 Pa 抗壓能力，透過系統化規劃建置，能只接與建築物一體成型。完全適應安裝在高溫和多風的地區。
+            | CNS 11526，SPV系列具有能承受 SPV 3600 Pa 和 BIPV 7200 Pa 抗壓能力，透過系統化規劃建置，能只接與建築物一體成型。完全適應安裝在高溫和多風的地區。 通過CNS 11526風壓測試：SPV系列能承受 3600 Pa ， BIPV系列能承受 7200 Pa，適合安裝在強風和高樓層之建築物。
         .col-lg-4
           img.img-circle(src='asset/img/pv/ex-01.jpg', alt='Generic placeholder image', style='width:140px;height:140px')
           h2 特殊防護
           p
-            | 鹽霧腐蝕的特殊防護，通過 TÜVIEC 61701 認證，ASE 採用的光伏組件抗鹽和霧腐蝕，配合上高抗風的能力，讓 PV 太陽能面板安裝在沿海地區仍然保持良好的狀態。
+            | 通過 TÜVIEC 61701鹽霧腐蝕測試：ASE 採用的太陽光電模組抗鹽霧腐蝕，讓太陽光電模組安裝在多雨霧且鹽分高的沿海地區仍能正常地運作。
         .col-lg-4
           img.img-circle(src='asset/img/pv/ac4.png', alt='Generic placeholder image', style='width:140px;height:140px')
           h2 安心防火
@@ -131,23 +130,7 @@ block content
             |     詳細規格
       hr
       .row.featurette
-        br
-        .col-md-7
-          h2.featurette-heading
-            | 專業系統工程
-          p.lead
-            | ASE 專業系統工程，為您建置完整的系統，除了太陽能發電系統，包含了完整的
-            a(href='#') &nbsp;節能服務&nbsp;
-            | 建置，專業並同步系統規劃
-            a(href='#') &nbsp;綠色能源&nbsp;
-            | 、
-            a(href='#') &nbsp;智能監控&nbsp;
-            | 、
-            a(href='#') &nbsp;修繕改裝&nbsp;
-            | 一次大規模的完成整套電網與照明系統，無論是舊式系統改裝、全新的系統建置，ASE 皆有相關專業服務。
-        .col-md-5
-          br
-          img.featurette-image.img-responsive(src='asset/img/pv/pic5.png', alt='Generic placeholder image')
+        include system-left
 
       hr
       - var iconSize = 57;
