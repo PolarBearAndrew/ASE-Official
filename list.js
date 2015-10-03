@@ -11,8 +11,8 @@ var list = [
   { page: 'PV', data: '' },
   { page: 'PVset', data: '' },
   { page: 'Smart', data: '' },
-  { page: 'Supply', data: 'Supply' }
+  { page: 'Supply', data: 'Supply' },
+  { page: 'Smart-home', data: '' }
 ];
-	// { page: 'product', data: 'product-1' },
 
 module.exports = list;

@@ -1,0 +1,83 @@
+extends container
+
+block content
+  style.
+    body{
+    padding-top:120px;
+    }
+  center
+    .container
+      .col-md-1
+      .col-md-5
+        form.form-horizontal(role='form')
+          .form-group
+            label.col-sm-6.control-label(for='where') 縣市
+            .col-sm-6
+              select#where.form-control
+                option 台北市
+                option 新北市
+                option 桃園縣
+                option 桃園市
+          .form-group
+            label.col-sm-6.control-label(for='PV1') 太陽能板角度
+            .col-sm-6
+              input#PV1.form-control(type='number' min='0' value='0')
+          .form-group
+            label.col-sm-6.control-label(for='PV1') 太陽能板大小(坪)
+            .col-sm-6
+              input#PV1.form-control(type='number' min='0' value='0')
+          .form-group
+            label.col-sm-6.control-label(for='PV2') 模組類型
+            .col-sm-6
+              select#PV2.form-control
+                option 晶矽
+                option 非晶矽
+                option CIGS
+      .col-md-5
+        style.
+          td input{
+          margin-left: 20px;
+          margin-right: 20px;
+          }
+          .showNum
+        table
+          tr
+            td 可裝設容量約
+            td
+              input.showNum(style='width:100px' disabled )
+            td (kWp)
+          tr
+            td 系統設置價格約
+            td
+              input.showNum(style='width:100px' disabled )
+            td (元)
+          tr
+            td 預估每年發電量
+            td
+              input.showNum(style='width:100px' disabled )
+            td (度/年)
+          tr
+            td 粗估回收年限
+            td
+              input.showNum(style='width:100px' disabled )
+            td (年)
+          tr
+            td 預估電能躉售月收入
+            td
+              input.showNum(style='width:100px' disabled )
+            td (元/月)
+          tr
+            td 預估電能躉售年收入
+            td
+              input.showNum(style='width:100px' disabled )
+            td (元/年)
+          tr
+            td 預估每年CO2減量
+            td
+              input.showNum(style='width:100px' disabled )
+            td (公斤/年)
+
+
+
+  script(src='asset/javascripts/default2.js')
+  script(src='asset/javascripts/default3-bugs.js')
