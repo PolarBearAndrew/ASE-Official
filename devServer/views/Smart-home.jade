@@ -1,0 +1,146 @@
+extends container
+
+block content
+  #myCarousel.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel', data-slide-to='0')
+      li(data-target='#myCarousel', data-slide-to='1')
+      li(data-target='#myCarousel', data-slide-to='2')
+      li(data-target='#myCarousel', data-slide-to='3')
+      li(data-target='#myCarousel', data-slide-to='4')
+    .carousel-inner(role='listbox')
+      .item.active
+        img(src='asset/img/demo-LED-1.jpg', alt='First slide')
+        .container
+          .carousel-caption
+            h1 LED天井燈 60W 6米設備製造廠
+            //- p
+            //-   | ASE 提供完整的節能照明系統規劃，滿足不同需求的的系統設計。
+              //- | ASE 規劃完整的創能、節能照明系統。ASE 專業客製化的系統設計。
+      //- .item
+      //-   img(src='asset/img/demo-LED-3.jpg', alt='Third slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED天井燈 150W 13米機械加工廠
+      //-       //- p
+      //-       //-   | ASE 能照亮高達 13 米高的廠房空間，充足且節能的光源無煩惱。
+      //- .item
+      //-   img(src='asset/img/demo-LED-4.jpg', alt='Fourth slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED天井燈 80W 8米倉庫
+      //-       //- p
+      //-       //-   | 高均勻度光照實例，完整照明無重影，舒服且明亮的投光。
+      //- .item
+      //-   img(src='asset/img/demo-LED-5.jpg', alt='Five slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED路燈 100W 8米道路照明
+      //-       //- p
+      //-       //-   | ASE 擁有完全開放空間的照明系統建置經驗，你們的廠房空間大小為何，ASE 都能為您量身定做節能投光系統。
+      //- .item
+      //-   img(src='asset/img/demo-LED-6.jpg', alt='Six slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED天井燈 150W 13米機械加工廠
+            //- P ASE 能大批量的節能 LED 系統規劃，同時規劃節能、創能與照明。
+    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only 下一張
+    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only 上一張
+  .container.marketing
+    .row
+      .col-lg-4
+        img.img-circle(src='asset/img/heading/heading_1.png', alt='Generic placeholder image', style='width:140px;height:140px')
+        h2 雲端服務
+        p
+          | 利用雲端的即時連線系統，讓您感受真的正科技智能生活，透過行動裝置/手機可操控智慧家庭中的各類電器產品！其中包括出門忘記關的電視，夏天回家前先開冷氣，查看各電器產品耗電的狀況，
+          | 在早上睡醒前幫您煮好咖啡、
+      .col-lg-4
+        img.img-circle(src='asset/img/heading/heading_2.png', alt='Generic placeholder image', style='width:140px;height:140px')
+        h2 散熱設計
+        p
+          | 專業團隊長達 2 年開發、108 選 1 的最佳解熱技術，完美 PINFIN 比例的弧形散熱片，配上放射狀的風洞對流孔。並且透過 COB 集成技術，完美結合台製晶粒與銅基板，透過散熱鰭片快速揮發，專業的高速散熱效果。
+      .col-lg-4
+        img.img-circle(src='asset/img/heading/heading_3.png', alt='Generic placeholder image', style='width:140px;height:140px')
+        h2 安心認證
+        p
+          | 全系列燈具通過 IP66 認證，室內室外皆適用。符合 CNS14115 及 CNS14335，品質有保證。保證 100% 台灣製造、 3 年材料保固，保證 2 年光衰 8% 以下。多重認證與信心保固，提供您最優秀的選擇。
+    hr
+    .row.featurette
+      .col-md-7
+        h2.featurette-heading
+          | 外型設計
+        h3
+          span.text-muted 髮絲紋質感，全導角處理
+        p.lead
+          | 散熱機構效率提升，重量減輕 15~30%。簡潔設計，相當容易維護與只用，大幅降低製造及維修成本。
+          | 另外，防水結構採用不鏽鋼 SUS304 支架 / 螺絲 + 矽膠級防水膠條。不鏽鋼經久耐用、絕不生鏽配上高等級防水矽膠，二道防水設計保護。
+      .col-md-5
+        img.featurette-image.img-responsive(src='asset/img/body/water.png', alt='產品設計圖')
+    hr
+    .row.featurette
+      .col-md-5
+        img.featurette-image.img-responsive(src='asset/img/body/all.png', alt='Generic placeholder image')
+      .col-md-7
+        h2.featurette-heading
+          | 各種適性規格
+        h3
+          span.text-muted 選配最適合的燈具：無光暈天井燈、投射燈
+        p.lead
+          | 60˚：高穿透性光源，適用於較高或狹窄的環境。
+          br
+          | 90˚：高均勻度光照，適用於一般高度或開闊的還性。
+          br
+          | 120˚：大面積照射範圍，適用於中低高度或要求立面亮度的環境。
+          br
+          | 120˚ * 90˚：特殊廣角設計，滿足光照需求。
+          br
+          br
+        Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
+          span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+          |     詳細規格
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        h3 各類型車室專用燈
+        p.lead
+          | 25˚：極薄、極亮、IP67 防水。
+        Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
+          span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+          |     詳細規格
+    hr
+    .row.featurette
+      include system-left
+    hr
+    .row.featurette
+      br
+      .col-md-5
+        img.featurette-image.img-responsive(src='asset/img/ESCO/story.png', alt='Generic placeholder image')
+      .col-md-7
+        include ESCO-story.jade
+    hr
+    - var iconSize = 57;
+    .row.featurette
+      .col-md-12
+        center
+          - for( var i = 1; i <= 5; i++)
+            img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+          br
+          - for( var i = 1; i <= 9; i++)
+            img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+          br
+          br
+          h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
+    //- .row.featurette
+    hr.featurette-divider
+    include footer
+
+  script(src='asset/javascripts/default2.js')
+  script(src='asset/javascripts/default3-bugs.js')
