@@ -6,10 +6,6 @@
   margin-top: 6px;
   display: block;
 }
-/* line 7, ../sass/main.sass */
-.logo:hover {
-  color: #FF9900;
-}
 
 /* line 9, ../sass/main.sass */
 .logo-lg {
@@ -18,10 +14,6 @@
   font-size: 4em;
   margin-top: 4px;
   display: block;
-}
-/* line 15, ../sass/main.sass */
-.logo-lg:hover {
-  color: #FF9900;
 }
 /* line 18, ../sass/main.sass */
 .logo-lg .subLogo {

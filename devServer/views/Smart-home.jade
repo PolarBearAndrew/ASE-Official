@@ -1,7 +1,7 @@
 extends container
 
 block content
-  #myCarousel.carousel.slide(data-ride='carousel')
+  //- #myCarousel.carousel.slide(data-ride='carousel')
     ol.carousel-indicators
       li.active(data-target='#myCarousel', data-slide-to='0')
       li(data-target='#myCarousel', data-slide-to='1')
@@ -50,22 +50,26 @@ block content
     a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
       span.sr-only 上一張
+  style.
+    body{
+    padding-top: 120px
+    }
   .container.marketing
     .row
       .col-lg-4
-        img.img-circle(src='asset/img/heading/heading_1.png', alt='Generic placeholder image', style='width:140px;height:140px')
+        img.img-circle(src='asset/img/Smart/cloud.png', alt='Generic placeholder image', style='width:140px;height:140px;border-radius:0;')
         h2 雲端服務
         p
           | 利用雲端的即時連線系統，讓您感受真的正科技智能生活，透過行動裝置/手機可操控智慧家庭中的各類電器產品！其中包括出門忘記關的電視，夏天回家前先開冷氣，
           | 在早上睡醒前幫您煮好咖啡... 透過雲端，隨心所欲、隨時隨地的長空您的生活瑣事。
       .col-lg-4
-        img.img-circle(src='asset/img/heading/heading_2.png', alt='Generic placeholder image', style='width:140px;height:140px')
+        img.img-circle(src='asset/img/Smart/now.png', alt='Generic placeholder image', style='width:140px;height:140px;border-radius:0;')
         h2 即時監控
         p
           | 即時監控家中的每個智慧家電，長空家中所有的電器使用資訊，了解耗電量等等。監控並保護家中用電狀況、自動切屋但過載的電源，監視任何不正常使用的電量，
           | 家中一氧化碳或二氧化碳的濃度，甚至監控家中魚缸的生態維持系統！
       .col-lg-4
-        img.img-circle(src='asset/img/heading/heading_3.png', alt='Generic placeholder image', style='width:140px;height:140px')
+        img.img-circle(src='asset/img/Smart/home.png', alt='Generic placeholder image', style='width:140px;height:140px; border-radius:0')
         h2 完整家用系統
         p
           | 利用 QR code 即可輕鬆的分享資訊給家中的成員，在家用的 App 系統上，並沒有複雜或高難度的介面，快速且低成本的分享，讓大家都能對家中的用電狀況相當了解，
@@ -81,11 +85,11 @@ block content
           | 依據不同的生活型態、族群，智能系統有不同的方案滿足您的需求，諸如：家庭個人、公司企業機構、建案/裝潢業者、民宿/社區大樓、開發人員...等等。
           | 不同的使用場合 ASE Intech 提供您不同的方案，讓系統完整的嵌入在您的生活中。
       .col-md-5
-        img.featurette-image.img-responsive(src='asset/img/body/water.png', alt='產品設計圖')
+        img.featurette-image.img-responsive(src='asset/img/Smart/use.png', alt='產品設計圖')
     hr
     .row.featurette
       .col-md-5
-        img.featurette-image.img-responsive(src='asset/img/body/water.png', alt='Generic placeholder image')
+        img.featurette-image.img-responsive(src='asset/img/Smart/total.png', alt='Generic placeholder image')
       .col-md-7
         h2.featurette-heading
           | 各種監測、感測器
@@ -115,29 +119,24 @@ block content
           a(href='Fix.html') &nbsp;修繕改裝&nbsp;
           | 四大服務範疇，依照不同的需求，一次性地為您量身訂做完整的能源管理系統，無論是舊式系統改裝、全新的系統建置，ASE 皆有相關的專業服務。
       .col-md-5
-        img.featurette-image.img-responsive(src='asset/img/body/demo.png', alt='Generic placeholder image')
+        img.featurette-image.img-responsive(src='asset/img/Smart/service.png', alt='Generic placeholder image')
     hr
-    .row.featurette
-      br
-      .col-md-5
-        img.featurette-image.img-responsive(src='asset/img/ESCO/story.png', alt='Generic placeholder image')
-      .col-md-7
-        include ESCO-story.jade
-    hr
-    - var iconSize = 57;
-    .row.featurette
+    //- - var iconSize = 57;
+    //- .row.featurette
       .col-md-12
         center
-          - for( var i = 1; i <= 5; i++)
-            img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          br
-          - for( var i = 1; i <= 9; i++)
-            img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          br
-          br
-          h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
+          //- - for( var i = 1; i <= 5; i++)
+          //-   img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+          //- br
+          //- - for( var i = 1; i <= 9; i++)
+          //-   img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+          //- br
+          //- br
     //- .row.featurette
-    hr.featurette-divider
+    //- hr.featurette-divider
+    center
+      h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
+    br
     include footer
 
   script(src='asset/javascripts/default2.js')
