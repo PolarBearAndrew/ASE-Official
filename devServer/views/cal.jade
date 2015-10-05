@@ -14,18 +14,39 @@ block content
             label.col-sm-6.control-label(for='where') 縣市
             .col-sm-6
               select#where.form-control
-                option 台北市
-                option 新北市
-                option 桃園縣
-                option 桃園市
-          .form-group
+                option(value='897') 基隆市
+                option(value='958') 大台北地區
+                option(value='1058') 桃園縣
+                option(value='1113') 新竹縣
+                option(value='931') 苗栗縣
+                option(value='970.9') 宜蘭縣
+                option(value='1148') 連江縣
+                option(value='1205') 台中市
+                option(value='1324') 彰化縣
+                option(value='1269') 雲林縣
+                option(value='1142') 南投縣
+                option(value='1231') 嘉義縣
+                option(value='767') 花蓮縣
+                option(value='1140') 金門縣
+                option(value='1271') 澎湖縣
+                option(value='1285') 台南市
+                option(value='1147') 屏東縣
+                option(value='969') 台東縣
+                option(value='1204') 高雄市
+
+
+          //- .form-group
             label.col-sm-6.control-label(for='PV1') 太陽能板角度
             .col-sm-6
               input#PV1.form-control(type='number' min='0' value='0')
           .form-group
-            label.col-sm-6.control-label(for='PV1') 太陽能板大小(坪)
+            label.col-sm-6.control-label(for='PV1') 可用設置坪數
             .col-sm-6
               input#PV1.form-control(type='number' min='0' value='0')
+          .form-group
+            label.col-sm-6.control-label(for='PV3') 系統價格
+            .col-sm-6
+              input#PV3.form-control(type='number' min='0' value='93600')
           .form-group
             label.col-sm-6.control-label(for='PV2') 模組類型
             .col-sm-6
@@ -81,5 +102,7 @@ block content
 
 
 
-  script(src='asset/javascripts/default2.js')
-  script(src='asset/javascripts/default3-bugs.js')
+  //- script(src='asset/javascripts/default2.js')
+  //- script(src='asset/javascripts/default3-bugs.js')
+  script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+  script(src='asset/javascripts/cal.js')
