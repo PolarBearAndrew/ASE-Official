@@ -5,7 +5,7 @@ block content
     body{
     padding-top:120px;
     }
-  center
+  //- center
     .container
       .col-md-1
       .col-md-5
@@ -100,7 +100,173 @@ block content
               input.showNum(style='width:100px' disabled )
             td (公斤/年)
 
-
+  .content.wr
+  //- .left
+    .left_item
+      img(src='templates/default/img/left_item_01.png')
+      ul
+        li
+          p
+            a(href='about.php?id=7') 太陽光電基本知識
+        li
+          p
+            a(href='setting.php') 設置費用試算
+        li
+          p
+            a(href='about.php?id=8') 電能躉購費率
+      img(src='templates/default/img/left_link_05.png')
+  .right
+    //- .content_crumb.clearfix
+    //-   ul.breadcrumb
+    //-     li
+    //-       a(href='index.php') 首頁
+    //-     li
+    //-       span.divider >
+    //-       | 設置資訊
+    //- .content_title
+    //-   p 太陽光電系統設置費用
+    .content_body
+      .setting
+        .setting_send
+          ul
+            li.setting_send_01 1.縣市
+            li
+              select#a1(name='a1')
+                option(value='0') 請選擇縣市
+                option(value='897') 基隆市
+                option(value='958') 大台北地區
+                option(value='1058') 桃園縣
+                option(value='1113') 新竹縣
+                option(value='931') 苗栗縣
+                option(value='970.9') 宜蘭縣
+                option(value='1148') 連江縣
+                option(value='1205') 台中市
+                option(value='1324') 彰化縣
+                option(value='1269') 雲林縣
+                option(value='1142') 南投縣
+                option(value='1231') 嘉義縣
+                option(value='767') 花蓮縣
+                option(value='1140') 金門縣
+                option(value='1271') 澎湖縣
+                option(value='1285') 台南市
+                option(value='1147') 屏東縣
+                option(value='969') 台東縣
+                option(value='1204') 高雄市
+            li.setting_send_01(style='margin-left:70px;') 2.可用屋頂坪數
+            li.setting_send_02
+              input#a2(style='float:left;', name='a2', type='text', value='請輸入可用屋頂坪數')
+              span(style='color:#60452E')  坪
+          ul
+            li.setting_send_01 3.模組類型
+            li
+              select#a3(name='a3')
+                option(value='0') 請選擇模組類型
+                option(value='3') 晶矽
+                option(value='5') 非晶矽
+                option(value='4') CIGS
+            li.setting_send_01(style='margin-left:70px;') 4.系統價格
+            li
+              select#a4(name='a4')
+                option(value='0') 系統價格
+                option(value='1') 預設
+                option(value='2') 自訂
+            li.setting_send_03
+              input#a6(name='a6')
+              span#a6s 元
+          ul
+            li.setting_send_01 5.併聯試運轉日期
+            li
+              select#a5(name='a5')
+                option(value='0') 預計併聯試運轉時間
+                option(value='1') 上半年
+                option(value='2') 下半年
+          ul(style='background-color:#fff;')
+            li(style='float:right;')
+              input#submit(type='image', name='submit', src='templates/default/img/setting_send.png')
+        //- style.
+          .setting_send{width: 776px;height: 185px;border: 1px solid #e1e1e1;background-color: #fff;}
+          .setting_send ul{height: 40px;background-color: #EFE7E1;margin: 5px 5px 0 5px;}
+          .setting_send li{float: left;line-height: 40px;text-align: center;color: #fff;margin-left: 0px;}
+          .setting_send .setting_send_01{background-color: #00BEB9;width: 115px;text-align:left;padding-left:5px;}
+          .setting_send input{float: right;}
+          .setting_send_02 input,
+          .setting_send select{ position:relative; font-size:14px; width:170px; height: 31px; line-height:24px; border:1px solid #bbb; color:#7D6046; margin-left: 5px;}
+          .setting_send_02 input{margin-top: 3px;}
+          .setting_send_02{margin-left: 50px;}
+          .setting_send_03{margin-left:5px;}
+          .setting_send_03 input{margin-top:3px; margin-left:5px; height:31px;line-height:24px;border:1px solid #bbb; width:70px; display:none;float: left;}
+          .setting_send_03 span{float: left;color: #60452E; margin-left: 5px;display: none;}
+          .setting_result li{font-size: 16px;line-height: 30px;}
+          .setting_result input{width: 80px; text-align: right; background:rgba(255, 255, 255, 0.5) none repeat scroll 0 0 !important;filter:Alpha(opacity=50); background:#fff;border-bottom:1px solid #aaa;}
+        .setting_result
+          ul
+            li 根據您所輸入的資料與今年度太陽光電電能躉購費率，以下為試算：
+            li
+              | 可裝設容量約
+              input#r1
+              | (kWp)
+            li
+              | 系統設置價格約
+              input#r2
+              | (元)
+            li
+              | 預估每年發電量
+              input#r3
+              | (度/年)
+            li
+              | 粗估回收年限
+              input#r4
+              | (年)
+            li
+              | 預估電能躉售月收入
+              input#r5
+              | (元/月)
+            li
+              | 預估電能躉售年收入
+              input#r6
+              | (元/年)
+            li
+              | 預估每年CO2減量
+              input#r7
+              | (公斤/年)
+        .setting_remark
+          .setting_remark_rate
+            .rate_01 上限費率
+            .rate_02
+              ul
+                li.rate_02_01 分類
+                li.rate_02_02 屋頂型
+            .rate_03
+              ul
+                li 裝置容量(kWp)
+                li
+                  p
+                    b(style='color: red') 2015
+                    | 年度第一期
+                    br
+                    | 上限費率(元/度)
+                li
+                  p
+                    b(style='color:red') 2015
+                    | 年度第二期
+                    br
+                    | 上限費率(元/度)
+            .rate_04
+              ul
+                li ≧1~
+              ul
+                li ≧20~
+              ul
+                li ≧100~
+              ul
+                li ≧500
+                li 5.1935
+                li 5.0537
+          p
+            | 相關試算方式請參閱
+            a(style='color:red', href='http://www.mrpv.org.tw/information.php?sort_id=31') 系統常見諮詢問題及回覆
+          br
+          img(src='templates/default/img/setting_remark.png')
 
   //- script(src='asset/javascripts/default2.js')
   //- script(src='asset/javascripts/default3-bugs.js')
