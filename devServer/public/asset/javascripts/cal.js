@@ -52,7 +52,7 @@ if (a3==0) {alert("請選擇模組類型!");return ;};
 
 // if(!isNumber(a6)){alert("自訂值為數字");return;};
 if(a4==2){
-  if(isNull(a6)){alert("請輸入自訂值");return;};
+  if( !a6 ){alert("請輸入自訂值");return;};
 }
 
 if (a5==0) {alert("預計併聯試運轉時間!");return ;};
