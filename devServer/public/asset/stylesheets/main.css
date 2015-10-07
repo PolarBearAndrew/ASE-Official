@@ -1,4 +1,9 @@
 /* line 1, ../sass/main.sass */
+.ase {
+  font-family: "Audiowide", cursive;
+}
+
+/* line 4, ../sass/main.sass */
 .logo {
   font-family: "Audiowide", cursive;
   color: white;
@@ -6,12 +11,12 @@
   margin-top: 6px;
   display: block;
 }
-/* line 7, ../sass/main.sass */
+/* line 10, ../sass/main.sass */
 .logo:hover {
   color: white;
 }
 
-/* line 9, ../sass/main.sass */
+/* line 12, ../sass/main.sass */
 .logo-lg {
   font-family: "Audiowide", cursive;
   color: white;
@@ -19,35 +24,35 @@
   margin-top: 4px;
   display: block;
 }
-/* line 15, ../sass/main.sass */
+/* line 18, ../sass/main.sass */
 .logo-lg:hover {
   color: white;
 }
-/* line 18, ../sass/main.sass */
+/* line 21, ../sass/main.sass */
 .logo-lg .subLogo {
   font-family: "Averia Gruesa Libre", cursive;
   color: #00CC00;
   font-size: 0.3em;
   margin-top: -9px;
 }
-/* line 23, ../sass/main.sass */
+/* line 26, ../sass/main.sass */
 .logo-lg .subLogo:hover {
   color: #00CC00;
 }
 
-/* line 27, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 a:link {
   text-decoration: none;
 }
-/* line 29, ../sass/main.sass */
+/* line 32, ../sass/main.sass */
 a:visited {
   text-decoration: none;
 }
-/* line 31, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 a:hover {
   text-decoration: none;
 }
-/* line 33, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 a:active {
   text-decoration: none;
 }
