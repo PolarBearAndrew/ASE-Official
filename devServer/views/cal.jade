@@ -5,126 +5,8 @@ block content
     body{
     padding-top:120px;
     }
-  //- center
-    .container
-      .col-md-1
-      .col-md-5
-        form.form-horizontal(role='form')
-          .form-group
-            label.col-sm-6.control-label(for='where') 縣市
-            .col-sm-6
-              select#where.form-control
-                option(value='897') 基隆市
-                option(value='958') 大台北地區
-                option(value='1058') 桃園縣
-                option(value='1113') 新竹縣
-                option(value='931') 苗栗縣
-                option(value='970.9') 宜蘭縣
-                option(value='1148') 連江縣
-                option(value='1205') 台中市
-                option(value='1324') 彰化縣
-                option(value='1269') 雲林縣
-                option(value='1142') 南投縣
-                option(value='1231') 嘉義縣
-                option(value='767') 花蓮縣
-                option(value='1140') 金門縣
-                option(value='1271') 澎湖縣
-                option(value='1285') 台南市
-                option(value='1147') 屏東縣
-                option(value='969') 台東縣
-                option(value='1204') 高雄市
-
-
-          //- .form-group
-            label.col-sm-6.control-label(for='PV1') 太陽能板角度
-            .col-sm-6
-              input#PV1.form-control(type='number' min='0' value='0')
-          .form-group
-            label.col-sm-6.control-label(for='PV1') 可用設置坪數
-            .col-sm-6
-              input#PV1.form-control(type='number' min='0' value='0')
-          .form-group
-            label.col-sm-6.control-label(for='PV3') 系統價格
-            .col-sm-6
-              input#PV3.form-control(type='number' min='0' value='93600')
-          .form-group
-            label.col-sm-6.control-label(for='PV2') 模組類型
-            .col-sm-6
-              select#PV2.form-control
-                option 晶矽
-                option 非晶矽
-                option CIGS
-      .col-md-5
-        style.
-          td input{
-          margin-left: 20px;
-          margin-right: 20px;
-          }
-          .showNum{
-
-          }
-        table
-          tr
-            td 可裝設容量約
-            td
-              input.showNum(style='width:100px' disabled )
-            td (kWp)
-          tr
-            td 系統設置價格約
-            td
-              input.showNum(style='width:100px' disabled )
-            td (元)
-          tr
-            td 預估每年發電量
-            td
-              input.showNum(style='width:100px' disabled )
-            td (度/年)
-          tr
-            td 粗估回收年限
-            td
-              input.showNum(style='width:100px' disabled )
-            td (年)
-          tr
-            td 預估電能躉售月收入
-            td
-              input.showNum(style='width:100px' disabled )
-            td (元/月)
-          tr
-            td 預估電能躉售年收入
-            td
-              input.showNum(style='width:100px' disabled )
-            td (元/年)
-          tr
-            td 預估每年CO2減量
-            td
-              input.showNum(style='width:100px' disabled )
-            td (公斤/年)
-
-  .content.wr
-  //- .left
-    .left_item
-      img(src='templates/default/img/left_item_01.png')
-      ul
-        li
-          p
-            a(href='about.php?id=7') 太陽光電基本知識
-        li
-          p
-            a(href='setting.php') 設置費用試算
-        li
-          p
-            a(href='about.php?id=8') 電能躉購費率
-      img(src='templates/default/img/left_link_05.png')
+  link(rel="stylesheet", href="/asset/stylesheets/cal.css")
   .right
-    //- .content_crumb.clearfix
-    //-   ul.breadcrumb
-    //-     li
-    //-       a(href='index.php') 首頁
-    //-     li
-    //-       span.divider >
-    //-       | 設置資訊
-    //- .content_title
-    //-   p 太陽光電系統設置費用
     .content_body
       .setting
         .setting_send
@@ -154,7 +36,7 @@ block content
                 option(value='1204') 高雄市
             li.setting_send_01(style='margin-left:70px;') 2.可用屋頂坪數
             li.setting_send_02
-              input#a2(style='float:left;', name='a2', type='text', value='請輸入可用屋頂坪數')
+              input#a2.ctrl-show(style='float:left;', name='a2', type='text', value='請輸入可用屋頂坪數')
               span(style='color:#60452E')  坪
           ul
             li.setting_send_01 3.模組類型
@@ -182,91 +64,91 @@ block content
                 option(value='2') 下半年
           ul(style='background-color:#fff;')
             li(style='float:right;')
-              input#submit(type='image', name='submit', src='templates/default/img/setting_send.png')
-        //- style.
-          .setting_send{width: 776px;height: 185px;border: 1px solid #e1e1e1;background-color: #fff;}
-          .setting_send ul{height: 40px;background-color: #EFE7E1;margin: 5px 5px 0 5px;}
-          .setting_send li{float: left;line-height: 40px;text-align: center;color: #fff;margin-left: 0px;}
-          .setting_send .setting_send_01{background-color: #00BEB9;width: 115px;text-align:left;padding-left:5px;}
-          .setting_send input{float: right;}
-          .setting_send_02 input,
-          .setting_send select{ position:relative; font-size:14px; width:170px; height: 31px; line-height:24px; border:1px solid #bbb; color:#7D6046; margin-left: 5px;}
-          .setting_send_02 input{margin-top: 3px;}
-          .setting_send_02{margin-left: 50px;}
-          .setting_send_03{margin-left:5px;}
-          .setting_send_03 input{margin-top:3px; margin-left:5px; height:31px;line-height:24px;border:1px solid #bbb; width:70px; display:none;float: left;}
-          .setting_send_03 span{float: left;color: #60452E; margin-left: 5px;display: none;}
-          .setting_result li{font-size: 16px;line-height: 30px;}
-          .setting_result input{width: 80px; text-align: right; background:rgba(255, 255, 255, 0.5) none repeat scroll 0 0 !important;filter:Alpha(opacity=50); background:#fff;border-bottom:1px solid #aaa;}
+              input#submit.btn.btn-primary.btn-md(type='button', value='試算')
         .setting_result
-          ul
+          ul.show
             li 根據您所輸入的資料與今年度太陽光電電能躉購費率，以下為試算：
             li
               | 可裝設容量約
-              input#r1
+              input#r1.ctrl-show
               | (kWp)
             li
               | 系統設置價格約
-              input#r2
+              input#r2.ctrl-show
               | (元)
             li
               | 預估每年發電量
-              input#r3
+              input#r3.ctrl-show
               | (度/年)
             li
               | 粗估回收年限
-              input#r4
+              input#r4.ctrl-show
               | (年)
             li
               | 預估電能躉售月收入
-              input#r5
+              input#r5.ctrl-show
               | (元/月)
             li
               | 預估電能躉售年收入
-              input#r6
+              input#r6.ctrl-show
               | (元/年)
             li
               | 預估每年CO2減量
-              input#r7
+              input#r7.ctrl-show
               | (公斤/年)
-        .setting_remark
-          .setting_remark_rate
-            .rate_01 上限費率
-            .rate_02
-              ul
-                li.rate_02_01 分類
-                li.rate_02_02 屋頂型
-            .rate_03
-              ul
-                li 裝置容量(kWp)
-                li
-                  p
-                    b(style='color: red') 2015
-                    | 年度第一期
-                    br
-                    | 上限費率(元/度)
-                li
-                  p
-                    b(style='color:red') 2015
-                    | 年度第二期
-                    br
-                    | 上限費率(元/度)
-            .rate_04
-              ul
-                li ≧1~
-              ul
-                li ≧20~
-              ul
-                li ≧100~
-              ul
-                li ≧500
-                li 5.1935
-                li 5.0537
-          p
-            | 相關試算方式請參閱
+        hr
+        table.table.table-bordered(style='text-align:center;')
+          tr
+            td(rowspan='5')
+              br
+              br
+              br
+              br
+              | 上限費率
+            td 分類
+            td 裝置容量(kWp)
+            td 2015 年度第一期
+              br
+              | 上限費率(元/度)
+            td 2015 年度第二期
+              br
+              | 上限費率(元/度)
+          tr
+            td(rowspan='4')
+              br
+              br
+              br
+              | 屋頂型
+            td ≧1~<20
+            td 6.8633
+            td 6.6721
+          tr
+            td ≧20~<100
+            td 5.7378
+            td 5.5760
+          tr
+            td ≧100~<500
+            td 5.3627
+            td 5.2155
+          tr
+            td ≧500
+            td 5.1935
+            td 5.0537
+        br
+        center
+          h3.header 本試算工具使用注意事項
+        br
+        ol
+          li
+            | 本試算結果僅為參考數據，實際之系統(設備)價格仍需由設置者自行與 ASE 議定，提醒發電量、售電量收入、回收年限等數據，
+            | 仍與個案設置方式有關，相關細節請設置者與 ASE 討論。
+          li
+            | 太陽光發電系統(設備)的安裝費用因系統之容量大小、材料選用、施工方式、安裝現場特殊性(如額外的引接線費用)等而有差異性。
+          li
+            | 本試算工具仍以平屋頂設置方式估算。因太陽光發電系統設置平屋頂時，須考量女兒牆，屋凸或水塔等可能造成模組受遮陰，
+            | 或者前後排模組受遮陰之狀況，為避免降低發電量，設置所需樓板面積較大。若設定屋頂為斜屋頂時，其設置容量可提高約3成。
+        //- sp  相關試算方式請參閱
             a(style='color:red', href='http://www.mrpv.org.tw/information.php?sort_id=31') 系統常見諮詢問題及回覆
-          br
-          img(src='templates/default/img/setting_remark.png')
 
   //- script(src='asset/javascripts/default2.js')
   //- script(src='asset/javascripts/default3-bugs.js')
