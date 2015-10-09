@@ -12,7 +12,12 @@ var list = [
   { page: 'PVset', data: '' },
   { page: 'Smart', data: '' },
   { page: 'Supply', data: 'Supply' },
-  { page: 'Smart-home', data: '' }
+  { page: 'Smart-home', data: '' },
+  { page: 'Smart-energy', data: '' },
+  { page: 'Smart-enterprise', data: '' },
+  { page: 'Smart-light', data: '' },
+  { page: 'cal', data: '' },
+  { page: 'demo', data: '' },
 ];
 
 module.exports = list;

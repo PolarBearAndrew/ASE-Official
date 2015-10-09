@@ -1,0 +1,146 @@
+extends container
+
+block content
+  //- #myCarousel.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel', data-slide-to='0')
+      li(data-target='#myCarousel', data-slide-to='1')
+      li(data-target='#myCarousel', data-slide-to='2')
+      li(data-target='#myCarousel', data-slide-to='3')
+      li(data-target='#myCarousel', data-slide-to='4')
+    .carousel-inner(role='listbox')
+      .item.active
+        img(src='asset/img/demo-LED-1.jpg', alt='First slide')
+        .container
+          .carousel-caption
+            h1 LED天井燈 60W 6米設備製造廠
+            //- p
+            //-   | ASE 提供完整的節能照明系統規劃，滿足不同需求的的系統設計。
+              //- | ASE 規劃完整的創能、節能照明系統。ASE 專業客製化的系統設計。
+      //- .item
+      //-   img(src='asset/img/demo-LED-3.jpg', alt='Third slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED天井燈 150W 13米機械加工廠
+      //-       //- p
+      //-       //-   | ASE 能照亮高達 13 米高的廠房空間，充足且節能的光源無煩惱。
+      //- .item
+      //-   img(src='asset/img/demo-LED-4.jpg', alt='Fourth slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED天井燈 80W 8米倉庫
+      //-       //- p
+      //-       //-   | 高均勻度光照實例，完整照明無重影，舒服且明亮的投光。
+      //- .item
+      //-   img(src='asset/img/demo-LED-5.jpg', alt='Five slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED路燈 100W 8米道路照明
+      //-       //- p
+      //-       //-   | ASE 擁有完全開放空間的照明系統建置經驗，你們的廠房空間大小為何，ASE 都能為您量身定做節能投光系統。
+      //- .item
+      //-   img(src='asset/img/demo-LED-6.jpg', alt='Six slide')
+      //-   .container
+      //-     .carousel-caption
+      //-       h1 LED天井燈 150W 13米機械加工廠
+            //- P ASE 能大批量的節能 LED 系統規劃，同時規劃節能、創能與照明。
+    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only 下一張
+    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only 上一張
+  style.
+    body{
+    padding-top: 120px
+    }
+  .container.marketing
+    .row
+      .col-lg-4
+        img.img-circle(src='asset/img/Smart/cloud.png', alt='Generic placeholder image', style='width:140px;height:140px;border-radius:0;')
+        h2 效能分析
+        p
+          | 提供多項太陽能板發電標準比較，如發電效率是否與日照強度匹配、發電量是否符合預期標準、天氣記錄與發電資訊比較等等；另外，也可預估回收年限資訊，
+          | s提供成本回收估算、成本回收報表及發電衰退報表。提供管理者最完整的效能分析報告。
+      .col-lg-4
+        img.img-circle(src='asset/img/Smart/now.png', alt='Generic placeholder image', style='width:140px;height:140px;border-radius:0;')
+        h2 狀況監測
+        p
+          | 監測太陽能板即時用電資訊，可呈現多場域及單場域之日照、溫度、發電功率、用電功率、PR、RA等項目，並且顯示歷史發電紀錄，也可讓管理者比較日/月/年之總發電功率、
+          | 總發電量、總日照累積、總耗電功率、總耗電量、總減碳、節省費用/電費等相關紀錄。
+      .col-lg-4
+        img.img-circle(src='asset/img/Smart/home.png', alt='Generic placeholder image', style='width:140px;height:140px; border-radius:0')
+        h2 智慧診斷
+        p
+          | 當發電效率下降或異常時，即時通知使用者和系統業者，提高報修速度，縮短太陽能板異常排除時程。同時，系統業者可直接在異常記錄上標註保養紀錄，做為系統業者與使用者間的互動平台。
+    hr
+    .row.featurette
+      .col-md-7
+        h2.featurette-heading
+          | 適用各種需求
+        h3
+          span.text-muted 大小場域皆適用
+        p.lead
+          | 可依不同發電規模提供不同的太陽能發電監測硬體套件，且安裝容易！不但可解決大面積、多場域的管控問題，也可達到24小時即時監控的最佳管理效果。
+          | 並藉由LIZA再生能源監測管理，可幫助管理者得到最即時的發電監測及完整的效能分析，及24小時不間斷的智慧異常診斷，讓太陽能發電系統達到最佳的運轉效率。
+      .col-md-5
+        img.featurette-image.img-responsive(src='asset/img/Smart/use.png', alt='產品設計圖')
+    hr
+    .row.featurette
+      .col-md-5
+        img.featurette-image.img-responsive(src='asset/img/Smart/total.png', alt='Generic placeholder image')
+      .col-md-7
+        h2.featurette-heading
+          | 確保您的投資
+        h3
+          span.text-muted 專家診斷、智能管理
+        p.lead
+          | 長期：加速回收投資，維持賣電的利潤，縮短回收年限。
+          br
+          | 中期：提升管理效率，使用者可遠端管理多國場域，清楚掌握設備資訊，提高太陽能板發電的黃金年限。
+          br
+          | 短期：降低管理成本，以系統即時通知異常狀況，取代傳統人力巡邏，有效減少太陽能板閒置時間。
+          //- br
+          //- br
+          //- Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
+          //-   span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+          //-   | 詳細種類
+    hr
+    .row.featurette
+      br
+      .col-md-7
+        h2.featurette-heading
+          | LIZA再生能源監測管理
+        p.lead
+          | ASE 提供完整的再生能源監測系統建置服務，另外更包括
+          a(href='LED.html') &nbsp;節能服務&nbsp;
+          | 、
+          a(href='PV.html') &nbsp;綠色能源&nbsp;
+          | 、
+          a(href='Smart.html') &nbsp;智能監控&nbsp;
+          | 、
+          a(href='Fix.html') &nbsp;修繕改裝&nbsp;
+          | 四大服務範疇，依照不同的需求，一次性地為您量身訂做完整的能源管理系統，無論是舊式系統改裝、全新的系統建置，ASE 皆有相關的專業服務。
+      .col-md-5
+        img.featurette-image.img-responsive(src='asset/img/Smart/service.png', alt='Generic placeholder image')
+    hr
+    //- - var iconSize = 57;
+    //- .row.featurette
+      .col-md-12
+        center
+          //- - for( var i = 1; i <= 5; i++)
+          //-   img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+          //- br
+          //- - for( var i = 1; i <= 9; i++)
+          //-   img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
+          //- br
+          //- br
+    //- .row.featurette
+    //- hr.featurette-divider
+    center
+      h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
+    br
+    include footer
+
+  script(src='asset/javascripts/default2.js')
+  script(src='asset/javascripts/default3-bugs.js')
