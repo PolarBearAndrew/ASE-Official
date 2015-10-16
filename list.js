@@ -11,13 +11,14 @@ var list = [
   { page: 'PV', data: '' },
   { page: 'PVset', data: '' },
   { page: 'Smart', data: '' },
-  { page: 'Supply', data: 'Supply' },
   { page: 'Smart-home', data: '' },
   { page: 'Smart-energy', data: '' },
   { page: 'Smart-enterprise', data: '' },
   { page: 'Smart-light', data: '' },
   { page: 'cal', data: '' },
   { page: 'demo', data: '' },
+  { page: 'Supply', data: 'Supply' },
+  { page: 'Fix-all', data: 'Supply' },
 ];
 
 module.exports = list;

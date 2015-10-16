@@ -1,7 +1,7 @@
 var express = require('express');
 var router  = express.Router();
 
-var supply = require('../data/supply.js');
+var data = require('../data');
 
 router.get('/', (req, res, next) => {
   res.render('home')
@@ -9,12 +9,12 @@ router.get('/', (req, res, next) => {
 
 router.get('/Supply', (req, res, next) => {
 
-  res.render('Supply', { data: supply} );
+  res.render('Supply', { data: data.supply} );
 });
 
-router.get('/Supply.html', (req, res, next) => {
+router.get('/Fix-all', (req, res, next) => {
 
-  res.render('Supply', { data: supply} );
+  res.render('Fix-all', { data: data.fix} );
 });
 
 router.get('/:page', (req, res, next) => {
