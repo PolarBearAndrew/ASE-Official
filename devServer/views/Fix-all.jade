@@ -22,7 +22,8 @@ block content
                 .caption
                   h4= tmp.title
                   p
-                    a.btn.btn-primary.btn-sm(href=tmp.url target="_blank" ) 瞭解更多
+                    = tmp.describe
+                    //- a.btn.btn-primary.btn-sm(href=tmp.url target="_blank" ) 瞭解更多
             - if( i == parseInt( data.length /4 ) * ( col + 1 ) )
               - i++; break;
     include footer

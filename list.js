@@ -17,8 +17,8 @@ var list = [
   { page: 'Smart-light', data: '' },
   { page: 'cal', data: '' },
   { page: 'demo', data: '' },
-  { page: 'Supply', data: 'Supply' },
-  { page: 'Fix-all', data: 'Supply' },
+  { page: 'Supply', data: 'supply' },
+  { page: 'Fix-all', data: 'fix' },
 ];
 
 module.exports = list;
