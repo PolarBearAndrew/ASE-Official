@@ -99,9 +99,9 @@ block content
           | ASE Intech 擁有多種的智能監測器供您選擇，選擇您最在意的項目，逐步的建起屬於自己的智慧家庭系統。
           br
           br
-          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
+          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
             span.glyphicon.glyphicon-list-alt(aria-hidden="true")
-            |     詳細種類
+            |     詳細規格
     hr
     .row.featurette
       br
@@ -121,23 +121,48 @@ block content
       .col-md-5
         img.featurette-image.img-responsive(src='asset/img/Smart/service.png', alt='Generic placeholder image')
     hr
-    //- - var iconSize = 57;
-    //- .row.featurette
-      .col-md-12
-        center
-          //- - for( var i = 1; i <= 5; i++)
-          //-   img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          //- br
-          //- - for( var i = 1; i <= 9; i++)
-          //-   img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          //- br
-          //- br
-    //- .row.featurette
-    //- hr.featurette-divider
     center
       h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
     br
     include footer
+
+    //- Dialog
+    #spec.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4.modal-title 智能照明間共設備
+          .modal-body
+            style.
+              .spec-img{
+              max-width: 250px;
+              max-height: 250px;
+              }
+              .spec{
+              width: 80%;
+              }
+
+            center
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-home/outlet.png', alt='Generic placeholder image')
+              h3.header 智慧單插座
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-home/outlet-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-home/outlets.png', alt='Generic placeholder image')
+              h3.header 智慧排插座
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-home/outlets-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-home/control.png', alt='Generic placeholder image')
+              h3.header 無線迷你閘道器
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-home/control-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              br
+              br
 
   script(src='asset/javascripts/default2.js')
   script(src='asset/javascripts/default3-bugs.js')
