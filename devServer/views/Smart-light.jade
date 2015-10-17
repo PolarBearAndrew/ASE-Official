@@ -96,11 +96,11 @@ block content
         p.lead
           | In-Light 智慧照明系統提供一個更即時、更快速的路燈開關方式，管理者能夠透過網路隨時進行路燈操作，不分南北、不分國家，整個世界都是你的中控室。
           | 另外 In-Light 智慧照明系統的「彈性自動開關」功能，讓您即使在沒有網路、沒有電腦的環境下路燈也能自動完成開關，能敏捷配合世界熄燈日(Earth Hour)、日光節約(Summer Time) 等活動。
-          //- br
-          //- br
-          //- Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
-          //-   span.glyphicon.glyphicon-list-alt(aria-hidden="true")
-          //-   | 詳細種類
+          br
+          br
+          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
+            span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+            |    詳細種類
     hr
     .row.featurette
       br
@@ -120,23 +120,69 @@ block content
       .col-md-5
         img.featurette-image.img-responsive(src='asset/img/Smart/service.png', alt='Generic placeholder image')
     hr
-    //- - var iconSize = 57;
-    //- .row.featurette
-      .col-md-12
-        center
-          //- - for( var i = 1; i <= 5; i++)
-          //-   img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          //- br
-          //- - for( var i = 1; i <= 9; i++)
-          //-   img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          //- br
-          //- br
-    //- .row.featurette
-    //- hr.featurette-divider
     center
       h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
     br
     include footer
+
+    //- Dialog
+    #spec.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4.modal-title 智能照明間共設備
+          .modal-body
+            style.
+              .spec-img{
+              max-width: 250px;
+              max-height: 250px;
+              }
+              .spec{
+              width: 80%;
+              }
+
+            center
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-light/control.png', alt='Generic placeholder image')
+              h3.header LED智能照明監控器
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-light/control-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-light/box.png', alt='Generic placeholder image')
+              h3.header LED店員量測控制盒
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-light/box-spec.png', alt='Generic placeholder image')
+              br
+              br
+              //- table.table.table-bordered
+                thead
+                  tr
+                    th(colspan='2') 型號
+                    th LED-DM808
+                tbody
+                  tr
+                    td(rowspan='2') 使用電源
+                    td 輸入電壓
+                    td 20V ~ 25V
+                  tr
+                    td 消耗電流/功率
+                    td 50mA 以下 /1W 以下
+                  tr
+                    td(rowspan='4') 調光功能
+                    td 調光電壓、輸出範圍
+                    td 0 ~ 10V
+                  tr
+                    td 調光電壓輸出埠
+                    td 8 埠
+                  tr
+                    td 每組輸出埠推動能力
+                    td 8 盞 LED 燈具
+                  tr
+                    td 調光階層
+                    td 0% ~ 100%，共 64 階
+
 
   script(src='asset/javascripts/default2.js')
   script(src='asset/javascripts/default3-bugs.js')
