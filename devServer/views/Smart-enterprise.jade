@@ -87,6 +87,8 @@ block content
     hr
     .row.featurette
       .col-md-5
+        br
+        br
         img.featurette-image.img-responsive(src='asset/img/Smart/enterprice/smart.png', alt='Generic placeholder image')
       .col-md-7
         h2.featurette-heading
@@ -96,11 +98,10 @@ block content
         p.lead
           | 契約容量是否最適可直接影響企業每月的固定電費，此功能可將蒐集到的用電資訊，經由智慧化分析，演算出最適的多種不同電價結構及相對應用電成本，以建議出最佳契約容量。
           | 可將系統與現有設備進行整合，透過建置各式感測器、電力計，分析設備運作效率是否達標準、並對設備效能做調整或建議汰換，以提升設備的運作效率並降低企業的營運成本。
-          //- br
-          //- br
-          //- Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
-          //-   span.glyphicon.glyphicon-list-alt(aria-hidden="true")
-          //-   | 詳細種類
+          br
+          br
+          include smart-all-btn
+          br
     hr
     .row.featurette
       br
@@ -137,6 +138,7 @@ block content
       h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
     br
     include footer
+    include smart-all-dialog
 
   script(src='asset/javascripts/default2.js')
   script(src='asset/javascripts/default3-bugs.js')
