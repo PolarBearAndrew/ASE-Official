@@ -99,12 +99,18 @@ block content
           | ASE Intech 擁有多種的智能監測器供您選擇，選擇您最在意的項目，逐步的建起屬於自己的智慧家庭系統。
           br
           br
-          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec-outlet')
+          Button.btn.btn-success.btn.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec-outlet')
             span.glyphicon.glyphicon-list-alt(aria-hidden="true")
             |     智能插座
-          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:20px" aria-label="Left Align" , data-toggle='modal', data-target='#spec-scaner')
+          Button.btn.btn-success.btn.pull-right(style="margin-right:20px" aria-label="Left Align" , data-toggle='modal', data-target='#spec-scaner')
             span.glyphicon.glyphicon-list-alt(aria-hidden="true")
             |     智能感測器
+          Button.btn.btn-success.btn.pull-right(style="margin-right:20px" aria-label="Left Align" , data-toggle='modal', data-target='#spec-server')
+            span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+            |     智能伺服器/閘道器
+          Button.btn.btn-success.btn.pull-right(style="margin-right:20px" aria-label="Left Align" , data-toggle='modal', data-target='#spec-power')
+            span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+            |     智能電力監測
     hr
     .row.featurette
       br
@@ -196,6 +202,37 @@ block content
               h3.header 智能濕度感測器
               br
               img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/wet-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+
+    #spec-server.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4.modal-title 智能伺服器/閘道器
+          .modal-body
+            center
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/gateway.png', alt='Generic placeholder image')
+              h3.header 智能多功能閘道器
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/gateway-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/light-gateway.png', alt='light-gateway')
+              h3.header 無線迷你閘道器
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/light-gateway-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/green-gateway.png', alt='green-gateway')
+              h3.header 綠能閘道器
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/green-gateway-spec.png', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/light-server.png', alt='light-server')
+              h3.header 微型伺服器
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-enterprice/light-server-spec.png', alt='Generic placeholder image')
               hr.featurette-divider
 
   script(src='asset/javascripts/default2.js')
