@@ -1,5 +1,3 @@
-
-
 module.exports = [
   { title: '局部裝修', describe: '工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..', img: 'asset/img/fix/part.png' },
   { title: '防水抓漏', describe: '工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..工程簡述..', img: 'asset/img/fix/water.png' },
