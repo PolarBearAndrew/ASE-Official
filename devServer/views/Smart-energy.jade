@@ -100,11 +100,11 @@ block content
           | 中期：提升管理效率，使用者可遠端管理多國場域，清楚掌握設備資訊，提高太陽能板發電的黃金年限。
           br
           | 短期：降低管理成本，以系統即時通知異常狀況，取代傳統人力巡邏，有效減少太陽能板閒置時間。
-          //- br
-          //- br
-          //- Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec2')
-          //-   span.glyphicon.glyphicon-list-alt(aria-hidden="true")
-          //-   | 詳細種類
+          br
+          br
+          Button.btn.btn-success.btn-lg.pull-right(style="margin-right:80px" aria-label="Left Align" , data-toggle='modal', data-target='#spec')
+            span.glyphicon.glyphicon-list-alt(aria-hidden="true")
+            |    詳細規格
     hr
     .row.featurette
       br
@@ -124,22 +124,42 @@ block content
       .col-md-5
         img.featurette-image.img-responsive(src='asset/img/Smart/service.png', alt='Generic placeholder image')
     hr
-    //- - var iconSize = 57;
-    //- .row.featurette
-      .col-md-12
-        center
-          //- - for( var i = 1; i <= 5; i++)
-          //-   img.img-circle(src='asset/img/icon/'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          //- br
-          //- - for( var i = 1; i <= 9; i++)
-          //-   img.img-circle(src='asset/img/icon/a'+i+'.png', alt='', style='width:'+iconSize+'px;height:'+iconSize+'px;margin:3px')
-          //- br
-          //- br
-    //- .row.featurette
-    //- hr.featurette-divider
     center
       h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
     br
     include footer
+    //- Dialog
+    #spec.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4.modal-title 雲端太陽能監測管理設備
+          .modal-body
+            style.
+              .spec-img{
+              max-width: 250px;
+              max-height: 250px;
+              }
+              .spec{
+              width: 80%;
+              }
+
+            center
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-energy/box.png', alt='Generic placeholder image')
+              h3.header 太陽能間空箱
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-energy/box-spec1.jpg', alt='Generic placeholder image')
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-energy/box-spec2.jpg', alt='Generic placeholder image')
+              hr.featurette-divider
+              img.spec-img.featurette-image.img-responsive(src='asset/img/Smart/Smart-energy/sys.png', alt='Generic placeholder image')
+              h3.header 太陽能輻射能量間監測器套組
+              br
+              img.spec.featurette-image.img-responsive(src='asset/img/Smart/Smart-energy/sys-spec.png', alt='Generic placeholder image')
+              br
+              br
   script(src='asset/javascripts/default2.js')
   script(src='asset/javascripts/default3-bugs.js')
