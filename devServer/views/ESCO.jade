@@ -144,28 +144,27 @@ block content
         div(style="height:40px; width:100px")
         p.lead
           .list-group
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading 系統性檢查
               p.list-group-item-text 現場盤查，診斷狀況
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading 規劃與提案
               p.list-group-item-text 規劃整體節能方案
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading 簽訂契約
               p.list-group-item-text 重複討論需求後，簽訂 ESCO 與第三方保證契約
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading 量測必要數據
               p.list-group-item-text 基準線資料建立
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading ASE 能源系統工程
               p.list-group-item-text 節能服務、綠色能源、智能監控等系統工程施作
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading 效益驗證
               p.list-group-item-text 透過 ESCO 合約驗證節能服務、綠色能源、智能監控等系統之效益
-            a.list-group-item(href='#')
+            a.list-group-item(href='')
               h4.list-group-item-heading 定期追蹤
               p.list-group-item-text 視合約狀況而定，定期追蹤與維護整體系統。
-
       //- .col-md-12
       //-   h2.featurette-heading 傳統節能計算與 IPMVP 之差異
       //-   h3.text-muted
@@ -268,6 +267,13 @@ block content
     br
     hr
     include footer.jade
+  script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+  script.
+    $(document).ready(function(){
+    $('html, body').on('click', '.list-group-item', function(){
+    return false;
+    })
+    })
 
   //- script(src='asset/javascripts/default.js')
   //- script(src='https://code.jquery.com/jquery-1.11.1.min.js')
