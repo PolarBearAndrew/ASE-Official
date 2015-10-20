@@ -21,7 +21,7 @@ block content
                   img(src=tmp.img, alt='...')
                 .caption
                   h4= tmp.title
-                  p
+                  p(style='height:80px')
                     = tmp.describe
                     //- a.btn.btn-primary.btn-sm(href=tmp.url target="_blank" ) 瞭解更多
             - if( i == parseInt( data.length /4 ) * ( col + 1 ) )
