@@ -1,59 +1,7 @@
 extends container
 
 block content
-  //- #myCarousel.carousel.slide(data-ride='carousel')
-    ol.carousel-indicators
-      li.active(data-target='#myCarousel', data-slide-to='0')
-      li(data-target='#myCarousel', data-slide-to='1')
-      li(data-target='#myCarousel', data-slide-to='2')
-      li(data-target='#myCarousel', data-slide-to='3')
-      li(data-target='#myCarousel', data-slide-to='4')
-    .carousel-inner(role='listbox')
-      .item.active
-        img(src='asset/img/demo-LED-1.jpg', alt='First slide')
-        .container
-          .carousel-caption
-            h1 LED天井燈 60W 6米設備製造廠
-            //- p
-            //-   | ASE 提供完整的節能照明系統規劃，滿足不同需求的的系統設計。
-              //- | ASE 規劃完整的創能、節能照明系統。ASE 專業客製化的系統設計。
-      //- .item
-      //-   img(src='asset/img/demo-LED-3.jpg', alt='Third slide')
-      //-   .container
-      //-     .carousel-caption
-      //-       h1 LED天井燈 150W 13米機械加工廠
-      //-       //- p
-      //-       //-   | ASE 能照亮高達 13 米高的廠房空間，充足且節能的光源無煩惱。
-      //- .item
-      //-   img(src='asset/img/demo-LED-4.jpg', alt='Fourth slide')
-      //-   .container
-      //-     .carousel-caption
-      //-       h1 LED天井燈 80W 8米倉庫
-      //-       //- p
-      //-       //-   | 高均勻度光照實例，完整照明無重影，舒服且明亮的投光。
-      //- .item
-      //-   img(src='asset/img/demo-LED-5.jpg', alt='Five slide')
-      //-   .container
-      //-     .carousel-caption
-      //-       h1 LED路燈 100W 8米道路照明
-      //-       //- p
-      //-       //-   | ASE 擁有完全開放空間的照明系統建置經驗，你們的廠房空間大小為何，ASE 都能為您量身定做節能投光系統。
-      //- .item
-      //-   img(src='asset/img/demo-LED-6.jpg', alt='Six slide')
-      //-   .container
-      //-     .carousel-caption
-      //-       h1 LED天井燈 150W 13米機械加工廠
-            //- P ASE 能大批量的節能 LED 系統規劃，同時規劃節能、創能與照明。
-    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-      span.sr-only 下一張
-    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-      span.sr-only 上一張
-  style.
-    body{
-    padding-top: 120px
-    }
+  include smart-all-show
   .container.marketing
     .row
       .col-lg-4
