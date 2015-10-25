@@ -1,7 +1,10 @@
 extends container
 
 block content
-  include smart-all-show
+  #myCarousel.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+      .item.active
+        img(src='asset/img/Smart/Smart-enterprice/show.png', alt='First slide')
   .container.marketing
     .row
       .col-lg-4
