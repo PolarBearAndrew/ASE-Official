@@ -1,11 +1,10 @@
 extends container
 
 block content
-  style.
-    body{
-    padding-top:120px;
-    }
-
+  #myCarousel.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+      .item.active
+        img(src='asset/img/fix/show.png', alt='First slide')
   .container
     .row
       - var i = 0
