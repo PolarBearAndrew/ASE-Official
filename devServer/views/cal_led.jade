@@ -1,0 +1,146 @@
+extends container
+
+block content
+  style.
+    body{
+    padding-top:120px;
+    }
+  link(rel="stylesheet", href="/asset/stylesheets/cal_led.css")
+  .container
+    .col-md-4
+    .col-md-4
+      center
+        ul
+          li(style='width:220px') 1.請輸入加總的用電值(W/瓦)
+          li
+            input#input-power(type='number' ).form-control
+        ul
+          li(style='width:220px') 2.請輸入用電時數(hr)
+          li
+            input#input-hour(type='number' ).form-control
+        input#done.btn.btn-primary.btn-md(type='button', value='試算' style='margin-left:40px')
+    .col-md-12
+    .col-md-2
+    .col-md-8
+      table.table.table-hover(style='text-align:center')
+        thead
+          tr
+            td
+            td
+            td 每度（元）
+            td 夏月（6/1-9/30）每月用電花費
+            td 每度（元）
+            td 非夏月（6/1-9/30）每月用電花費
+        tbody
+          tr
+            td(rowspan='6' style='padding-top:113px')
+              | 非
+              br
+              | 營
+              br
+              | 業
+              br
+              | 用
+            td 120度以下
+            td 2.10
+            td
+              input#ans_left_1.form-control
+            td 2.10
+            td
+              input#ans_right_1.form-control
+          tr
+            td 121-330度
+            td 3.02
+            td
+              input#ans_left_2.form-control
+            td 2.68
+            td
+              input#ans_right_2.form-control
+          tr
+            td 331-500度
+            td 4.39
+            td
+              input#ans_left_3.form-control
+            td 3.61
+            td
+              input#ans_right_3.form-control
+          tr
+            td 501-700度
+            td 5.44
+            td
+              input#ans_left_4.form-control
+            td 4.48
+            td
+              input#ans_right_4.form-control
+          tr
+            td 700-1000度
+            td 6.16
+            td
+              input#ans_left_5.form-control
+            td 5.03
+            td
+              input#ans_right_5.form-control
+          tr
+            td 1001度以上
+            td 6.71
+            td
+              input#ans_left_6.form-control
+            td 5.28
+            td
+              input#ans_right_6.form-control
+          hr
+          tr
+            td(rowspan='6' style='padding-top:60px')
+              | 營
+              br
+              | 業
+              br
+              | 用
+            td 330度以下
+            td 3.76
+            td
+              input#ans_left_7.form-control
+            td 3.02
+            td
+              input#ans_right_7.form-control
+          tr
+            td 331-700度
+            td 4.62
+            td
+              input#ans_left_8.form-control
+            td 3.68
+            td
+              input#ans_right_8.form-control
+          tr
+            td 701-1500度
+            td 5.48
+            td
+              input#ans_left_9.form-control
+            td 4.31
+            td
+              input#ans_right_9.form-control
+          tr
+            td 1501度以上
+            td 6.73
+            td
+              input#ans_left_10.form-control
+            td 5.31
+            td
+              input#ans_right_10.form-control
+    .col-md-12
+      center
+        p 電費計算：消耗的電器用品功率加起來就是你的電度數值.
+        p 1000W=1KW而1KW（H）=每一小時（H）=每一小時消耗1000W為1度電
+        p 電費=度數*電力公司的價格
+  .container
+    br
+    hr
+    center
+      h4 漢鵬科技 • 高品質 • 專業規劃 • 系統工程
+    br
+    include footer
+
+  //- script(src='asset/javascripts/default2.js')
+  //- script(src='asset/javascripts/default3-bugs.js')
+  script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+  script(src='asset/javascripts/cal_led.js')
