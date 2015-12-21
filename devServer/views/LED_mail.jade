@@ -1,0 +1,32 @@
+extends container
+
+block content
+	style.
+		body{
+			padding-top: 120px
+		}
+	.container
+		.row
+			.col-lg-3
+			.col-lg-6
+				.input-group
+					span.input-group-btn
+						button.btn.btn-default(type='button') 家用/公司
+					input.form-control(type='text' name='家用/公司')
+				br
+				.input-group
+					span.input-group-btn
+						button.btn.btn-default(type='button') 聯絡人姓名
+					input.form-control(type='text' name='連絡人姓名')
+				br
+				.input-group
+					span.input-group-btn
+						button.btn.btn-default(type='button') 聯絡人電話
+					input.form-control(type='text' name='聯絡人電話')
+				br
+				center
+					a.send.btn.btn-success.btn-lg() 收到屬於您專屬的報告
+					
+		//- script(src='asset/javascripts/default2.js')
+		script(src='asset/javascripts/default3-bugs.js')
+		script(src='asset/javascripts/mail.js')
