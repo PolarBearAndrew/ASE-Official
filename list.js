@@ -17,6 +17,7 @@ var list = [
   { page: 'Supply', data: 'supply' },
   { page: 'Fix-all', data: 'fix' },
   { page: 'cal_led', data: '' },
+  { page: 'LED_mail', data: '' },
 ];
 
 module.exports = list;
